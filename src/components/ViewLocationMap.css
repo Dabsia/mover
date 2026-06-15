@@ -1,0 +1,53 @@
+/* ViewLocationMap.css */
+.map-container {
+  width: 640px;
+  height: 206px;
+}
+
+@media (max-width: 1512px) {
+  .map-container {
+    width: 575px;
+    height: 206px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1400px) {
+  .map-container {
+    width: 490px;
+    height: 206px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1278px) {
+  .map-container {
+    width: 435px;
+    height: 206px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+@media (max-width: 1228px) {
+  .map-container {
+    width: 365px;
+    height: 206px;
+    position: relative;
+    overflow: hidden;
+  }
+}
+
+
+@media (max-width: 1184px) {
+  .map-container {
+    width: 310px;
+    height: 206px;
+    position: relative;
+    overflow: hidden;
+  }
+
+
+}

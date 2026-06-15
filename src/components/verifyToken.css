@@ -1,0 +1,133 @@
+.verify_background {
+    /* background-color: aliceblue; */
+    backdrop-filter: blur(3px);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.verify_token_container {
+    width: 508px;
+    border-radius: 16px;
+    border: 1px solid rgba(227, 227, 227, 1);
+    background-color: rgba(255, 255, 255, 1);
+
+}
+
+.verify_token_head {
+    border-bottom: 1px solid rgba(227, 232, 239, 1);
+    padding: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.verify_token_head span {
+    color: rgba(18, 18, 18, 1);
+    font-weight: 600;
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+}
+
+.verify_token_head img {
+    cursor: pointer;
+}
+
+.otp_body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    padding: 24px 0;
+}
+
+.enter_otp_text {
+    color: rgba(44, 44, 44, 1);
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+.token_input {
+    display: flex;
+    gap: 8px;
+}
+
+.token_input div input {
+    border: 1px solid rgba(188, 223, 246, 1);
+    height: 44px;
+    width: 44px;
+    padding: 14px;
+    border-radius: 8px;
+    outline: none;
+    font-size: 20px;
+}
+
+.token_input div input::-webkit-outer-spin-button,
+.token_input div input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+.token_input div input[type=number] {
+    -moz-appearance: textfield;
+}
+
+.no_code_yet :first-child {
+    color: rgba(158, 158, 158, 1);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.no_code_yet :last-child {
+    color: rgba(59, 130, 246, 1);
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.border-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid rgba(227, 232, 239, 1);
+    padding: 24px;
+}
+
+.border-btn button {
+    background-color: rgba(5, 77, 150, 1);
+    color: #fff;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 1000px;
+}
+
+@media (max-width: 1000px) {
+    .verify_background {
+        /* background-color: aliceblue; */
+        backdrop-filter: blur(3px);
+        height: 100vh;
+        width: 100vw;
+        padding: 10px;
+        /* display: flex
+    ; */
+        /* justify-content: center; */
+        align-items: center;
+    }
+
+    .verify_token_container {
+        /* width: 508px; */
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translate(-50%, 10px);
+        width: 90%;
+        border-radius: 16px;
+        border: 1px solid rgba(227, 227, 227, 1);
+        background-color: rgba(255, 255, 255, 1);
+    }
+}

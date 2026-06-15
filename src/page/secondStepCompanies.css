@@ -1,0 +1,142 @@
+.company_firststep_btn_second {
+    position: absolute;
+    padding-top: 20px;
+    width: 100%;
+    bottom: 3px;
+    border-top: 1px solid rgba(229, 229, 229, 1);
+    display: flex;
+    justify-content: space-between;
+}
+
+.company_firststep_btn_second :first-child {
+    color: rgba(60, 130, 246, 1);
+    /* cursor: not-allowed; */
+    cursor: pointer;
+}
+
+
+.company_firststep_btn_second :last-child {
+    background-color: rgba(5, 77, 150, 1);
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 1000px;
+}
+
+.company_input_reg {
+    display: flex;
+    flex-direction: column;
+    margin-top: 40px;
+}
+
+.company_input_reg label {
+    color: rgba(44, 44, 44, 1);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+.company_input_reg input {
+    width: 100%;
+    padding: 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(227, 227, 227, 1);
+    outline: none;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+.company_input_reg div {
+    margin-top: -10px;
+    margin-left: 0px;
+    color: rgba(158, 158, 158, 1);
+    font-size: 13px;
+    border: none !important;
+}
+
+.company_input_reg_pass {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15px;
+    position: relative;
+}
+
+.company_input_reg_pass label {
+    color: rgba(44, 44, 44, 1);
+    font-size: 14px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+.company_input_reg_pass input {
+    width: 100%;
+    padding: 8px 55px 8px 12px;
+    border-radius: 8px;
+    border: 1px solid rgba(227, 227, 227, 1);
+    outline: none;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+.company_input_reg_pass div {
+    margin-top: 0px;
+    margin-left: 0px;
+    color: rgba(158, 158, 158, 1);
+    font-size: 13px;
+    border: none !important;
+}
+
+.company_input_reg_pass span {
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: rgba(44, 44, 44, 1);
+    cursor: pointer;
+
+}
+
+.verify_component {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+.requirement {
+    font-size: 14px;
+    margin-top: 5px;
+  }
+  .requirement.pass {
+    color: green;
+  }
+  .requirement.fail {
+    color: red;
+  }
+
+@media (max-width: 1000px) {
+
+
+    .company_firststep_btn_second {
+        position: absolute;
+        padding-top: 10px;
+        padding-bottom: 20px;
+        width: 100%;
+        top: 85vh;
+        /* border-top: 1px solid rgba(229, 229, 229, 1); */
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        /* justify-content: space-between; */
+    }
+
+    .verify_component {
+        position: absolute;
+        top: 99%;
+        left: 50%;
+        transform: translate(-50%, -45%);
+        z-index: 10;
+    }
+}

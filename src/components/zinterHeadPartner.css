@@ -1,0 +1,29 @@
+.zinter_head {
+    border: 1px solid rgba(209, 209, 209, 1);
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 110px;
+    align-items: center;
+    box-shadow: 1px 1px 10px #ebe5e5;
+}
+
+.more_assist {
+    color: rgba(158, 158, 158, 1);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+@media (max-width: 700px) {
+    .zinter_head {
+        border: 1px solid rgba(209, 209, 209, 1);
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 15px 25px 0;
+        align-items: center;
+        box-shadow: 1px 1px 10px #ebe5e5;
+    }
+}

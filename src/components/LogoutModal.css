@@ -1,0 +1,126 @@
+.container-logout-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  width: 100vw;
+  z-index: 2;
+}
+
+
+
+.container-logout-laptop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  backdrop-filter: blur(3px);
+  height: 100vh;
+  width: 100vw;
+  font-family: "DM Sans";
+}
+
+.container-logout-laptop-sub {
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  /* padding: 178px; */
+  background-color: #F6F6F6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.logout-question-laptop {
+  font-weight: 900;
+  font-size: 32px;
+  text-align: center;
+  width: 50%;
+}
+
+.logout-note-laptop {
+  font-family: "DM Sans";
+  font-size: 20px;
+  width: 50%;
+  text-align: center;
+
+}
+
+.logout-btn-container {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  /* border: 1px solid; */
+  border-top: 1px solid #ccc;
+  padding: 22px 40px;
+  font-family: "DM Sans";
+}
+
+.logout-btn-container :first-child {
+  border: 1px solid rgb(18, 40, 193);
+  color: rgb(18, 40, 193);
+  background-color: #fff;
+  outline: none;
+  border-radius: 20px;
+  padding: 5px 25px;
+  cursor: pointer;
+}
+
+.logout-btn-container :last-child {
+  background-color: rgb(18, 40, 193);
+  color: #fff;
+  outline: none;
+  border-radius: 20px;
+  padding: 5px 25px;
+  cursor: pointer;
+
+}
+
+@media (max-width: 1000px) {
+  .container-logout-laptop-sub {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    /* padding: 178px; */
+    background-color: #F6F6F6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .logout-question-laptop {
+    font-weight: 900;
+    font-size: 32px;
+    text-align: center;
+    width: 85%;
+  }
+
+  .logout-btn-container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* border: 1px solid; */
+    border-top: 1px solid #ccc;
+    padding: 22px 20px;
+    font-family: "DM Sans";
+  }
+
+  .logout-note-laptop {
+    font-family: "DM Sans";
+    font-size: 20px;
+    width: 85%;
+    text-align: center;
+  }
+}

@@ -1,0 +1,154 @@
+.about_zinter_container {
+
+    margin-top: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 40px;
+}
+
+.about_zinter_head {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about_zinter_text {
+    /* font-family:; */
+    font-family: "DM Sans", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.zoom_card {
+    position: relative;
+}
+
+.inner_card {
+    position: absolute;
+    top: 26px;
+    padding: 0 1rem;
+    justify-content: space-between;
+    display: flex;
+    align-items: center;
+}
+
+.small_picture_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.small_picture {
+    background-color: rgba(255, 255, 255, 0.6);
+    width: fit-content;
+    display: block;
+    padding: 5px;
+}
+
+.small_picture_text {
+    font-size: 16px;
+    font-family: "DM Sans", sans-serif;
+    font-weight: 700;
+    background-color: rgba(255, 255, 255, 0.6);
+    /* border: 1px solid rgba(217, 217, 217, 1); */
+    width: fit-content;
+    display: block;
+    padding: 5px;
+}
+
+.arrow_down {
+    width: fit-content;
+    border: 1px solid rgba(227, 227, 227, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 50%;
+    padding: 5px;
+}
+
+@media screen and (max-width: 1330px){
+    .about_zinter_head {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about_zinter_head h1 {
+        margin-bottom: 2rem ;
+        text-align: center;
+        width: 100;
+    }
+    .about_zinter_text {
+       text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 1150px) {
+    .about_zinter_head h1 {
+        font-size: 56px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .zoomingCardContainer{
+        height: 500px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .zoomingCardContainer{
+        height: 450px;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .about_zinter_head h1 {
+        font-size: 36px;
+    }
+    .about_zinter_text {
+        width: 80%;
+     }
+     .about_zinter_container {
+        margin-top: 130px;
+    }
+    .zoomingCardContainer{
+        height: 400px;
+    }
+    
+}
+
+@media screen and (max-width:650px){
+    .zoomingCardContainer{
+        height: 370px;
+    }
+}
+@media screen and (max-width:550px){
+    .zoomingCardContainer{
+        height: 320px;
+    }
+}
+
+@media screen and (max-width:430px){
+    .zoomingCardContainer{
+        height: 280px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .about_zinter_head h1 {
+        font-size: 28px;
+        margin-bottom: 1rem;
+    }
+    .about_zinter_text {
+        width: 90%;
+    }
+    .arrow_down {
+        align-self: flex-start
+    }
+    .small_picture_text {
+        font-size: 14px;
+    }
+    
+}
+
+@media screen and (max-width:380px){
+    .zoomingCardContainer{
+        height: 260px;
+    }
+}

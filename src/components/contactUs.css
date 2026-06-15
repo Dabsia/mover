@@ -1,0 +1,57 @@
+.contact_us_container {
+    margin: 80px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+    align-items: center;
+    width: 80%;
+    border-radius: 24px;
+    padding:40px;
+    background: linear-gradient(-25deg, #1a7bc6, #054d96);
+    /* background: linear-gradient(to right red, yellow); */
+}
+
+.contact_us_header {
+    background-color: rgba(19, 106, 181, 1);
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    font-weight: 500;
+    font-family: "DM Sans", sans-serif;
+    padding: 5px 16px;
+    border-radius: 100px;
+}
+
+.contact_us_text {
+    font-family: "Unbounded", sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 1);
+    width: 794px;
+    text-align: center;
+}
+
+.contact_us_partners {
+    font-family: "DM Sans", sans-serif;
+    width: 558px;
+    color: rgba(255, 255, 255, 1);
+}
+
+@media screen and (max-width: 1050px){
+    .contact_us_text, .contact_us_partners {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .contact_us_container{
+        padding: 20px;
+        width: 90%;
+    }
+    .contact_us_text  {
+        font-size: 24px;
+    }
+    .contact_us_partners {
+        font-size: 16px;
+    }
+}

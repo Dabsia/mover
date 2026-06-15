@@ -1,0 +1,285 @@
+.mobileOptionsContainer, .moversMobileHeader, .mobileTable{
+    display: none;
+}
+
+.mobileStaticProgress{
+    display: none;
+}
+
+.quoteTop{
+    display: none;
+}
+.altQuoteTop{
+    display: flex
+}
+
+
+@media screen and (max-width: 1280px){
+    .moversCardContainer{
+        grid-template-columns: repeat(1, 1fr);
+        width: 100%;
+    }
+    .moversCardHolder{
+        width: 100% !important;
+    }
+}
+
+@media screen and (max-width:1170px) {
+    .moversMainContainer{
+        flex-direction: column;
+    }
+    .movingCompanyDetailBox{
+        margin-left: 0;
+    }
+    .moversCardContainer{
+        grid-template-columns: repeat(2, 1fr);
+        width: 100%;
+    }
+    .staticContainer{
+        /* display: none; */
+        width: 100%;
+    }
+    .stepHolder{
+        margin-right: 0;
+    }
+    .moversProgressContainer{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .recommendContainer{
+       margin-left: 0;
+    }
+    .paymentBox{
+        margin-bottom: 3rem;
+    }
+    
+}
+
+@media screen and (max-width: 900px) {
+    .movingCompanyMoreDetails{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .moveDetailsOptionsContainer{
+        flex-direction: column;
+    }
+    .webOptionsContainer{
+        display: none;
+    }
+    .mobileOptionsContainer{
+        display: flex;
+        /* align-items: center; */
+        flex-direction: column;
+    }
+    .mobileOptionsContainerAmount {
+        margin-right: 1rem;
+    }
+    .moveDetailsMainiContainer{
+        padding: 1rem 0;
+        height: fit-content;
+    }
+    .movingCompanyMoreDetails{
+        width: 100%;
+        margin-top: 1rem;
+        /* display: none; */
+    }
+    .moveCompanyDirectionContainer{
+        width: 100%;
+    }
+    .movingCompanyDetailsIconXCoontainer{
+        display: none;
+    }
+    .movingCompanyDirection{
+        margin-left: 0;
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .movingCompanyNameContainer{
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 820px){
+    .mobileStaticProgress{
+       display: flex;
+    }
+    .moversProgressContainer, .staticContainer{
+        display: none;
+    }
+    .quoteTop{
+        display: flex;
+    }
+
+    .altQuoteTop{
+        display: none;
+    }  
+    
+}
+
+
+@media screen and (max-width: 800px){
+    .moveTimeLine{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .moveTimeLineMapContainer, .moveTimeLineInfo{
+        width: 100%;
+    }
+   
+}
+
+@media screen and (max-width: 780px){
+    .moversCardContainer{
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+@media screen and (max-width: 670px){
+    .mobileTable{
+        display: block;
+        margin-bottom: 2rem;
+    }
+    .webTable{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .movingCompanyName{
+        font-size: 20px;
+    }
+    .movingCompanyNameAvailable{
+        font-size: 12px;
+    }
+    .moversWebHeader{
+        display: none;
+    }
+    .moversMobileHeader{
+        display: flex;
+    }
+    .moversTrackInfo{
+        font-size: 14px;
+    }
+    .moversTrackInfoContainer{
+        align-items: flex-start;
+    }
+    .paymentSuccessModal{
+        align-items: flex-end;
+    }
+    
+}
+
+@media screen and (max-width: 500px) {
+    .movingContainerFromLocation{
+        font-size: 14px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 80%;
+    }
+    .mobileOptionsContainerAmount {
+       font-size: 28px;
+    }
+    .trackMoveSuccessText{
+        font-size: 18px;
+        width: 100%;
+    }
+    .paymentSuccessModalBox{
+        width: 90%;
+    }
+    .trackMoveSuccessSubText{
+        font-size: 14px;
+        line-height: 18.2px;
+        width: 100%;
+    }
+    .trackMoveSuccessInnerBox{
+        width: 100%;
+        padding: .5rem;
+    }
+    .trackMoveSuccessInnerBoxText{
+        font-size: 16px;
+    }
+
+    .mobileStaticProgress{
+       padding: 18px 10px;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .movingCompanyName{
+        font-size: 16px;
+    }
+    .tableText{
+        width: 95%;
+        /* width: 300px; or any value */
+  white-space: normal;
+  overflow-wrap: break-word;
+    }
+}
+
+
+@media screen and (max-width: 400px){
+    .cardCompanyName{
+        font-size: 18px;
+    }
+    .cardCompanyAvailability{
+        font-size: 12px;
+    }
+    .cardCompanyDistance, .cardCompanyFeatures{
+        font-size: 14px;
+    }
+    .cardCompanyAmount{
+        font-size: 20px;
+    }
+    .movingContainerFromLocation{
+        width: 60%;
+    }
+    .movingCompanyName{
+        font-size: 13px;
+    }
+    .movingCompanyNameAvailable{
+        font-size: 10px;
+    }
+    .mobileOptionsContainerDistance, .mobileOptionsContainerOptions{
+        font-size: 14px;
+    }
+    .paymentCard, .paymentCardText{
+        font-size: 14px;
+    }
+    .moveTimeLineInfoOverlay{
+        height: 500px;
+    }
+    
+    .trackMoveIconContainer{
+        aspect-ratio: 1/1;
+        min-width: 50px;
+        min-height: 50px;
+        border-radius: 50%;
+
+    }
+    .trackMoveText{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 360px){
+   
+    .movingContainerFromLocation{
+        width: 50%;
+    }
+    .moveTimeLineInfoOverlay{
+        height: 550px;
+    }
+    
+}
+
+@media screen and (max-width:340px){
+   .recoTextHeader{
+        flex-direction: column;
+        align-items: flex-start;    
+   }
+    
+}

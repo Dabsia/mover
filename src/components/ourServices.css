@@ -1,0 +1,153 @@
+.services_container {
+    margin: 100px auto;
+    width: 80%;
+}
+
+.our_services_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+}
+
+.our_services_container :first-child {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: rgba(112, 112, 112, 1);
+    background-color: rgba(229, 229, 229, 0.3);
+    padding: 5px 16px;
+    border-radius: 100px;
+    width: 130px;
+}
+
+.our_services_container :nth-child(2) {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 36px;
+    color: rgba(18, 18, 18, 1);
+}
+
+.our_services_container :last-child {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(44, 44, 44, 1);
+    width: 732px;
+}
+
+.our_services_card_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.our_services_card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(228, 242, 251, 1);
+    padding: 32px;
+    border-radius: 18px;
+    width: 32%;
+    overflow: hidden;
+
+}
+
+/* .our_services_card img {
+    width: 100%;
+    height: 100%;
+   object-fit: cover;
+   transition: all .3s ease-in-out;
+
+}
+
+.our_services_card img:hover {
+    transform: scaleY(1.5);
+} */
+
+.our_services_card h3 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    color: rgba(18, 18, 18, 1);
+}
+
+.our_services_card span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(44, 44, 44, 1);
+
+}
+
+
+.our_services_card_sub_container {
+  display: flex;  
+  gap: 32px;
+  margin-top: 2rem;
+}
+
+.our_services_card_sub {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(228, 242, 251, 1);
+    padding: 32px;
+    border-radius: 18px;
+    
+}
+
+.our_services_card_sub h3 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    margin-top: 5px;
+    color: rgba(18, 18, 18, 1); 
+}
+
+.our_services_card_sub span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color: rgba(44, 44, 44, 1);
+}
+
+@media screen and (max-width: 1000px){
+    .services_container {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 850px){
+    .our_services_card_sub h3, .our_services_card h3 {
+        font-size: 18px;
+    }
+    .our_services_card span, .our_services_card_sub span{
+        font-size: 16px;
+    }
+    .our_services_container :last-child {
+        font-size: 17px;
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 760px) {
+    .our_services_card_container, .our_services_card_sub_container {
+        flex-direction: column;
+    }
+    .our_services_card{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    .our_services_card_sub{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .our_services_card,  .our_services_card_sub{
+       padding: 20px;
+    }
+}

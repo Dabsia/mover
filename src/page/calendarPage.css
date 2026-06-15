@@ -1,0 +1,31 @@
+.sidebar_calendar {
+    /* display: flex; */
+}
+
+.calendar_page {
+    margin-top: 15vh;
+    position: absolute;
+    top: 0;
+    left: 200px;
+    width: 85%;
+    max-height: 80%;
+    overflow: auto;
+}
+
+.p-6 {
+    padding: .5rem;
+    border: 1px solid rgba(228, 240, 252, 1);
+    border-radius: 12px;
+}
+
+@media (max-width: 1000px) {
+    .calendar_page {
+        margin-top: 10vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        max-height: 80%;
+        overflow: auto;
+    }
+}

@@ -1,0 +1,13 @@
+/* .empty_state_container {
+    background-image: url(/images/Background-pattern-decorative.svg);
+    background-position: center;
+    background-size: cover;
+    
+} */
+
+.empty_state_container img {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 10px);
+}

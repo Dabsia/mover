@@ -1,0 +1,118 @@
+.imageContainer{
+    background: url('../Assets/Rectangle 17796.png');
+}
+
+@media screen and (max-width: 1100px) {
+    .blurryContainer{
+        width: 80%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+   
+}
+
+
+
+@media screen and (max-width: 1020px) {
+    .blurryContainer{
+        height: 90%;
+    }
+   
+    .addItemsContainer h3{
+       font-size: 16px;
+    }
+
+    .addItemsContainer p{
+        font-size: 16px;
+     }
+
+    .addRoomBtn{
+        display: flex;
+    }
+    .addRoomBtnText{
+        display: none;
+    }
+}
+
+
+@media screen and (max-width: 920px) {
+    .blurryContainer{
+        width: 90%;
+    }
+   .selectedText{
+    display: none;
+   }
+}
+
+@media screen and (max-width: 850px){
+    .addItemsText{
+        font-size: 12px;
+    }
+}
+
+
+@media screen and (max-width: 800px){
+    .addItemsBox{
+        margin: 20px 0;
+    }
+    .inventoryListContainer{
+        margin-left: 0;
+    }
+    /* .selectedText{
+        display: flex;
+        width: fit-content;
+       }
+       .numberText{
+        display: flex;
+        align-items: center;
+       } */
+}
+
+@media screen and (max-width: 500px){
+    .imageRecogDesc{
+        font-size: 12px;
+    }
+    .imageRecogText{
+        font-size: 18px;
+    }
+
+    .roomItemName, .textSecure{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:430px){
+    .addItemsContainer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .addItemsText, .allItemsTextX{
+        font-size: 12px;
+    }
+
+
+  
+}
+@media screen and (max-width:410px){
+    .addItemsContainer{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .addItemsText{
+        display: none;
+    }
+
+    .addNewItemBtn{
+        display: flex;
+    }
+
+    
+}
+
+@media screen and (max-width:400px){
+    .numberOfItemsContainer{
+        display: none;
+    }
+   
+}

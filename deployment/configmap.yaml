@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: zinter-frontend-config
+data:
+  REACT_APP_API_URL: http://zinter.nl
+

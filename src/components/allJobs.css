@@ -1,0 +1,217 @@
+
+
+.table_container {
+    border: 1px solid rgba(147, 204, 242, 1);
+    margin-top: 10px;
+    border-radius: 6px;
+    max-height: 75vh;
+    overflow: auto;
+}
+
+.table_container::-webkit-scrollbar {
+    width: 0;
+}
+
+
+.table_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.left_table_head {
+    font-family: "DM Sans", sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+
+}
+
+.right_table_head {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.search_icon {
+    position: relative;
+    width: 300px;
+}
+
+.search_icon input {
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    width: 100%;
+    border: 1px solid rgba(205, 213, 223, 1);
+    padding: 5px 15px 5px 40px;
+    outline: none;
+    border-radius: 6px;
+}
+
+.search_icon img {
+    position: absolute;
+    top: 15%;
+    left: 10px;
+}
+
+.filter_con {
+    border-radius: 6px;
+    padding: 7px 12px;
+    width: 80px;
+    
+    display: flex;
+    gap: 3px;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    color: rgba(112, 112, 112, 1);
+  
+    border: 1px solid rgba(205, 213, 223, 1);
+}
+
+.filter_con:hover {
+    cursor: pointer;
+    background-color: rgba(239, 244, 250, 0.5);
+}
+
+.refresh {
+    border-radius: 6px;
+    padding: 7px 10px;
+    width: 40px;
+    cursor: pointer;
+    border: 1px solid rgba(205, 213, 223, 1);
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+table thead {
+    background-color: rgba(246, 248, 250, 1);
+    border-top: 1px solid rgba(205, 213, 223, 1);
+    border-bottom: 1px solid rgba(205, 213, 223, 1);
+
+}
+
+table thead tr th div { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgba(112, 112, 112, 1);
+    padding: 5px 20px;
+}
+
+tbody tr td .td {
+    padding: 5px 20px;
+}
+.name_td {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.name_text {
+    display: flex;
+    flex-direction: column;
+}
+
+.name_text :first-child {
+    color: rgba(44, 44, 44, 1);
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.name_text :last-child {
+    color: rgba(158, 158, 158, 1);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.move_summary {
+    display: flex;
+    flex-direction: column;
+}
+
+
+
+.move_summary :first-child {
+    color: rgba(44, 44, 44, 1);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.move_summary :last-child {
+    color: rgba(158, 158, 158, 1);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.move_summary_partner {
+    color: rgba(44, 44, 44, 1);
+    font-family: "DM Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+}
+
+.status {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: rgba(6, 78, 148, 1);
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: rgba(200, 224, 249, 1);
+    border: 1px solid rgba(200, 224, 249, 1);
+    width: 101px;
+    padding: 2px !important;
+    margin: 0 20px;
+}
+
+.status_active {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: #079455;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #EEF8EA;
+    border: 1px solid #D6EDCB;
+    width: fit-content;
+    padding: 0 5px !important;
+    margin: 0 20px;
+    border-radius: 8px;
+}
+
+.status_suspended {
+    display: flex;
+    gap: 4px;
+    align-items: center;
+    color: #B51726;
+    font-family: "DM Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    background-color: #FEF1F2;
+    border: 1px solid #FDE3E5;
+    width: fit-content;
+    padding: 0 5px !important;
+    margin: 0 20px;
+    border-radius: 8px;
+}
+
+.view {
+    cursor: pointer;
+    padding: 10px;
+}

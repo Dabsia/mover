@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: frontend-zinter-deployment
+spec:
+  replicas: 1  # Adjust as necessary
+  selector:
+    matchLabels:
+      app: frontend-zinter
+  template:
+    metadata:
+      labels:
+        app: frontend-zinter
+    spec:
+      containers:
+      - name: frontend-zinter-container
+        image: zinterapp/zinter-app-frontend:1  # Replace this with your Docker image name
+        ports:
+        - containerPort: 3000 # Replace with your app's port if necessary
+        env:
+        - name: REACT_APP_API_URL
+          valueFrom:
+            configMapKeyRef:
+              name: zinter-frontend-config
+              key: REACT_APP_API_URL

@@ -1,0 +1,656 @@
+/* Add this */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* for Internet Explorer and Edge */
+  scrollbar-width: none;     /* for Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;             /* for Chrome, Safari, and Opera */
+}
+
+.fromLocationText{
+    width: 350px;
+  }
+
+  /* .app-container {
+    margin: 300px;
+  } */
+
+@media screen and (max-width:1400px){
+.moveDetailsDesc{
+  width: 70%;
+}
+}
+@media screen and (max-width: 1380px) {
+  .heroDesc{
+    width: 80%;
+    line-height: 25.6px;
+  }
+}
+
+@media screen and (max-width: 1330px) {
+  .heroLeft{
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 1255px) {
+  .moversBtnContainer{
+    width: 20%;
+  }
+  .moversBtn{
+    font-size: 14px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .heroSection{
+    flex-direction: column;
+  }
+  .heroLeft{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+  }
+  .heroText{
+    text-align: center;
+    width: 100%;
+  }
+  .heroDesc{
+    text-align: center;
+    width: 100%;
+  }
+  .heroRight{
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .zoomingCard{
+    width: 100%;
+    height: 600px;
+    object-fit: scale-down;
+  }
+  .smallLocationCard{
+    left: 20px;
+  }
+  .zoomcardTextBox{
+    width: fit-content;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width:1213px){
+.moveDetailsDesc{
+  width: 80%;
+}
+}
+
+@media screen and (max-width: 1132px) {
+  .sellingCardText{
+    font-size: 16px;
+  }
+  .processSection{
+    flex-direction: column;
+  }
+  .processLeft{
+    width: 100%;
+    order: 2;
+  }
+  .processRight{
+    width: 100%;
+    order: 1;
+    margin-bottom: 2rem;
+  }
+  .womanHighlight{
+    left: -30px;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  .locationDetailsContainer{
+    flex-direction: column;
+  }
+  .locationContainer{
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  .locationMap{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .processWoman{
+    height: 800px;
+  }
+}
+
+@media screen and (max-width: 1055px) {
+  .moversBtnContainer{
+    width: 25%;
+  }
+  .newsLetterText{
+    width: 80%;
+  }
+  .newsLetterInputContainer{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1036px){
+.moveDetailsDesc{
+  width: 90%;
+}
+}
+
+@media screen and (max-width: 943px) {
+  .sellingCardText{
+    font-size: 14px;
+  }
+  .moveDetailsDesc{
+  width: 100%;
+}
+  .newsLetterText{
+    width: 90%;
+  }
+  .ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.locationMap{
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+@media screen and (max-width:900px) {
+  .moveDetailsCtaContainer{
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+  }
+  .processWoman{
+    height: 600px;
+  }
+  .moveDetailsBtnBox{
+    width: 100%;
+    margin-bottom: .5rem;
+    border-right: none;
+  }
+  .moversBtnContainer{
+    width: 100%;
+  }
+  .fromAndToContainer{
+    top: 60px;
+  }
+  .sellingCardContainer{
+    grid-gap: 1rem;
+  }
+  .sellingPointStyle{
+    margin: 0;
+  }
+  .sellingPointText {
+    text-align: left;
+    font-size: 30px;
+    width: 100%;
+  }
+  .sellingPointDesc{
+    text-align: left;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+}
+
+@media screen and (max-width: 850px) {
+  /* .sellingCardText{
+    font-size: 14px;
+  } */
+  .sellingCardContainer{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .sellingpointCardImage{
+    height: 350px;
+  }
+  .processWoman{
+    height: 500px;
+  }
+}
+
+@media screen and (max-width: 815px){
+  .mobileProgressArrow{
+    width: 130px;
+  }
+  .mobileProgressArrow2{
+    width: 150px;
+  }
+}
+  
+
+@media screen and (max-width: 800px){
+  .processText{
+    font-size: 36px;
+  }
+  .womanHighlight{
+    left: -10px;
+    bottom: 80px;
+  }
+  .newsLetterStyle{
+    margin-top: 0;
+  }
+  .newsLetterText{
+    /* text-align: left; */
+    width: 100%;
+    font-size: 32px;
+  }
+  .quoteContainer{
+    flex-direction: column;
+  }
+  .quoteContainerProgress{
+    width: 100%;
+    display: none;
+  }
+  .quoteContainerBtns{
+    display: none;
+  }
+  .quoteContainerPrimaryBtn{
+    display: block;
+  }
+  .locationParentContainer{
+    margin-left: 0;
+  }
+  .mobileQuoteProgress{
+    display: flex;
+    padding: 16px 8px;
+    width: 100%;
+  }
+ 
+}
+
+@media screen and (max-width: 775px){
+  
+  .subMobileProgressArrow{
+    width: 125px;
+  }
+  .mobileProgressArrow{
+    width: 125px;
+  }
+}
+
+@media screen and (max-width: 755px){
+  .subMobileProgressArrow{
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 745px){
+  .mobileProgressArrow{
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 735px){
+  .subMobileProgressArrow{
+    width: 115px;
+  }
+}
+
+@media screen and (max-width: 725px){
+  .mobileProgressArrow{
+    width: 110px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .mobileNav{
+    display: flex;
+  }
+  .desktopNav{
+    display: none;
+  }
+  .zoomcardTextBox{
+    width: 100%;
+  }
+  .trustedImageContainer{
+    width: 100%;
+  }
+  .sellingCardContainer{
+    margin-top: 2rem;
+  }
+  .processText{
+    width: 100%;
+  }
+  
+ 
+}
+
+@media screen and (max-width: 715px){
+  .subMobileProgressArrow{
+    width: 110px;
+  }
+   .mobileProgressArrow2{
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 695px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 105px;
+  }
+}
+
+@media screen and (max-width:680px) {
+  .footerContainer{
+    flex-direction: column;
+  }
+  .text-right{
+    text-align: left;
+   
+  }
+  .footerDesc{
+    font-size: 15px;
+    font-weight: 400;
+  }
+  .footerSubContainer{
+    margin-top: 2rem;
+    flex-direction: column;
+  }
+  .footerSubBox{
+    margin-top: 2rem;
+  }
+  .footerMainText{
+    margin-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 675px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 103px;
+  }
+}
+
+@media screen and (max-width: 675px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 210%;
+  }
+}
+
+@media screen and (max-width: 655px){
+  /* .mobileProgressArrow{
+    width: 110px;
+  } */
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 200%;
+  }
+
+  .womanHighlight{
+    left: -10px;
+    bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 635px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 190%;
+  }
+}
+
+@media screen and (max-width: 615px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 180%;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .moveDetailsText{
+    font-size: 32px;
+  }
+  .moveDetails{
+    margin: 2rem auto;
+    border-radius: 0;
+    width: 100vw;
+  }
+  .trustedImage{
+    width: 52px;
+  }
+  .trustedText{
+    font-size: 16px;
+  }
+  .newsLetterContainer{
+    padding: 2rem .5rem
+  }
+
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 172%;
+  }
+  .fromLocationText{
+    width: 250px;
+  }
+
+   .mobileProgressArrow2{
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 570px){
+
+.subMobileProgressArrow, .mobileProgressArrow{
+    width: 162%;
+  }
+}
+
+
+@media screen and (max-width: 565px){
+  .fromAndToContainer{
+    width: 100%;
+  }
+  .processWoman{
+    height: 450px;
+  }
+  .newsLetterSendBtn{
+    width: 20%;
+  }
+  .newsLetterText{
+    font-size: 28px;
+  }
+  .newsLetterDesc{
+    font-size: 15px;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 152%;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 142%;
+  }
+}
+
+@media screen and (max-width: 520px){
+ .subMobileProgressArrow, .mobileProgressArrow{
+    width: 132%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .heroBtnContainer{
+    flex-direction: column;
+    margin-top: 2rem;
+    width: 100%;
+  }
+  .needMoreAssitance{
+    display: none;
+  }
+  .secoondaryBtnContaiiner{
+    margin-left: 0;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .heroText{
+    font-size: 34px;
+    line-height: 54px;
+  }
+  .heroDesc{
+    font-size: 18px;
+    line-height: 26px;
+  }
+  .zoomingCard{
+    height: 400px;
+  }
+
+  .zoomCardDesc{
+    font-size: 14px;
+  }
+  .processText{
+    font-size: 30px;
+  }
+  .processLeftText{
+    font-size: 20px;
+  }
+  .processLeftDesc{
+    /* font-size: 16px; */
+    width: 100%;
+  }
+  .decorBtn{
+    width: 100%;
+    font-size: 16px;
+  }
+  .moveDetailsDesc{
+    font-size: 16px;
+  }
+  .sellingpointCardImage{
+    height: 220px;
+  }
+  .processWoman{
+    height: 400px;
+  }
+  .footerEndContainer{
+    flex-direction: column;
+    gap:10px ;
+  }
+  .trackCodeBox{
+    width: 400px;
+  }
+
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 138%;
+  }
+  .fromLocationText{
+    width: 200px;
+  }
+}
+
+@media screen and (max-width: 480px){
+.subMobileProgressArrow, .mobileProgressArrow{
+    width: 130%;
+  }
+   .mobileProgressArrow2{
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 460px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 120%;
+  }
+}
+
+@media screen and (max-width: 440px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 110%;
+  }
+  .fromLocationText{
+    width: 160px;
+  }
+}
+
+
+@media screen and (max-width:430px) {
+  .trackCodeBoxText{
+    font-size: 18px;
+  }
+  .trackCodeBoxInput{
+    height: 30px;
+    width: 30px;
+    font-size: 16px;
+  }
+  .trackCodeBox{
+    width: 95%;
+  }
+  /* .trackCodeBoxText{
+    font-size: 16px;
+  } */
+
+  .trackBoxInputContainer{
+    grid-gap: 6px;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .moveDetailsText{
+    font-size: 28px;
+  }
+  .moveDetails{
+    padding: 2rem .5rem;
+  }
+  .trustedImage{
+    width: 36px;
+  }
+  .sellingpointCardImage{
+    height: 160px;
+  }
+  .processWoman{
+    height: 380px;
+  }
+ .subMobileProgressArrow, .mobileProgressArrow{
+    width: 90%;
+  }
+   .mobileProgressArrow2{
+    width: 60px;
+  }
+}
+
+@media screen and (max-width: 380px){
+  .subMobileProgressArrow, .mobileProgressArrow{
+    width: 80%;
+  }
+  .locationFrom{
+    padding: 0 8px;
+  }
+  .fromLocationText{
+    width: 120px;
+  }
+}
+
+@media screen and (max-width: 360px){
+ .subMobileProgressArrow, .mobileProgressArrow{
+    width: 70%;
+  }
+  
+}
+
+@media screen and (max-width: 340px){
+ .subMobileProgressArrow, .mobileProgressArrow{
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 330px){
+ .subMobileProgressArrow, .mobileProgressArrow{
+    width: 55%;
+  }
+}

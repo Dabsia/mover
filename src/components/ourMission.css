@@ -1,0 +1,170 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 80px auto;
+    width: 90%;
+}
+
+
+.hassle_steps_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+
+}
+
+.hassle_steps_text {
+    text-align: center;
+    font-size: 16px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+.steps {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.our_mission_text_container {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    width: 710px;
+}
+
+.our_mission_text {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.our_mission_text h2 {
+    font-size: 32px;
+    font-weight: 500;
+    font-family: "Unbounded", sans-serif;
+    color: rgba(18, 18, 18, 1);
+    margin: 0;
+}
+
+.our_mission_text p {
+    color: rgba(44, 44, 44, 1);
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "DM Sans", sans-serif;
+}
+
+.location_establish {
+    display: flex;
+    justify-content: space-between;
+}
+
+.location {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.ddd{
+    width: fit-content;
+}
+
+.location span {
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.location h2 {
+    font-family: "Unbounded", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+
+}
+
+.establish {
+    display: flex;
+    flex-direction: column;
+}
+
+@media screen and (max-width: 1024px){
+    .container{
+        flex-direction: column;
+    }
+    .steps {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 2rem 0; 
+        width: 100%;
+    }
+    .connectorLine{
+        width: 90%;
+        height: 3px;
+        background-color: #E3E8EF;
+    }
+    .hassle_steps_text{
+        text-align: center;
+        width: 100%;
+    }
+    .our_mission_text_container{
+        width: 100%;
+    }
+    .our_mission_text_container {
+        
+        gap: 30px;
+    }
+    
+}
+
+@media screen and (max-width: 720px){
+    .our_mission_text h2{
+        font-size: 42px;   
+        text-align: center;
+    }
+    .our_mission_text p{
+        font-size: 20px;   
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .our_mission_text h2{
+        font-size: 36px;   
+        line-height: 46px;
+    }
+    .our_mission_text p{
+        font-size: 20px;   
+        line-height: 26px;
+    }
+}
+
+@media screen and (max-width: 510px){
+
+    .location span{
+        font-size: 18px;
+    }
+    .location h2{
+        font-size: 24px;
+    }
+}
+
+@media screen and (max-width: 500px){
+    .our_mission_text h2{
+        font-size: 32px;   
+    }
+    .our_mission_text p{
+        font-size: 18px;   
+    }
+}
+
+@media screen and (max-width: 400px){
+    .location span{
+        font-size: 16px;
+    }
+    .location h2{
+        font-size: 22px;
+    }
+}

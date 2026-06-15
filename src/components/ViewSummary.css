@@ -1,0 +1,30 @@
+
+@media screen and (max-width: 800px) {
+
+    .viewSummaryContainer{
+        height: fit-content;
+        padding-bottom: 0;
+    }
+    .summaryContainer{
+        margin-bottom: 2rem;
+        padding: 0
+    }
+    .summaryBox{
+        margin-left: 0;
+    }
+    .sideSide{
+        display: none;
+    }
+    .boxSide{
+        margin-left: 0;
+    }
+    .lineView{
+        display: flex;
+    }
+}
+
+@media screen and (max-width: 720px) {
+    .headerMobileLinks{
+        font-size: 18px;
+    }
+}
