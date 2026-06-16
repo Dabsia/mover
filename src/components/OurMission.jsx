@@ -1,6 +1,5 @@
 import React from "react";
-import stepIcon from "../Assets/_Step icon base.svg";
-import connectorIcon from "../Assets/Connector.svg";
+
 import "./ourMission.css";
 import { useTranslation } from "react-i18next";
 
@@ -11,9 +10,9 @@ const OurMission = () => {
       <div className="hassle_steps_container">
         <p className="hassle_steps_text">{t("hasslefree.title")}</p>
         <div className="steps">
-          <img src={stepIcon} alt="" />
-          <img className="connectorLine" src={connectorIcon} alt="" />
-          <img src={stepIcon} alt="" />
+          <img src="/assets/_Step icon base.svg" alt="" />
+          <img className="connectorLine" src="/assets/Connector.svg" alt="" />
+          <img src="/assets/_Step icon base.svg" alt="" />
         </div>
       </div>
       <div className="our_mission_text_container">

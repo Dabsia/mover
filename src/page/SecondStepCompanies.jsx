@@ -2,10 +2,9 @@ import React, { useEffect, useState } from "react";
 import FirstCardToggle from "../components/FirstCardToggle";
 import VerifyTokenModal from "../components/VerifyToken";
 import SuccessMessage from "../components/SuccessModal";
-import stepperMobileSecond from "../Assets/mobile-stepper-icon-second.svg"
+
 // import stepperIcon from "../Assets/Progress minimal icons connected.svg"
-import mobileStepperIcon from "../Assets/mobile-stepper-icon.svg"
-import stepperIconSecond from "../Assets/second-step.svg"
+
 import "./firstStepCompanies.css"
 import "./secondStepCompanies.css"
 import { useQuery } from "@tanstack/react-query";
@@ -67,7 +66,6 @@ const SecondStepCompanies = () => {
         navigate("/get-started")
     }
 
-
     const handleContinue = () => {
         // debugger
         if (!email.includes('@')) {
@@ -87,7 +85,6 @@ const SecondStepCompanies = () => {
             }, 6000);
             return
         }
-
 
         if (email && password) {
             refetch();
@@ -113,10 +110,10 @@ const SecondStepCompanies = () => {
             </div>
             <div className="first_company_card">
                 <div className="stepper_icon">
-                    {/* <img className="mobile_only_stepper_icon" src={stepperMobileSecond} alt="" /> */}
-                    <img className="mobile_only_stepper_icon" src="/images/mobile-stepper-icon-second.svg" alt="" />
-                    {/* <img className="laptop_only_stepper_icon" src={stepperIconSecond} alt="" /> */}
-                    <img className="laptop_only_stepper_icon" src="/images/second-step.svg" alt="" />
+                    {/* <img className="mobile_only_stepper_icon" src="/assets/mobile-stepper-icon-second.svg" alt="" /> */}
+                    <img loading="lazy" className="mobile_only_stepper_icon" src="/images/mobile-stepper-icon-second.svg" alt="" />
+                    {/* <img className="laptop_only_stepper_icon" src="/assets/second-step.svg" alt="" /> */}
+                    <img loading="lazy" className="laptop_only_stepper_icon" src="/images/second-step.svg" alt="" />
                 </div>
                 <div className="company_header">
                     <h1>Email Verification</h1>
@@ -163,7 +160,6 @@ const SecondStepCompanies = () => {
                     </div>
                 )}
 
-
                 <div className="company_policy">
                     <span>
 
@@ -187,7 +183,7 @@ const SecondStepCompanies = () => {
                     <SuccessMessage />
                 </div>}
 
-                {isLoading && <Loader />}
+            {isLoading && <Loader />}
         </div>
     )
 }

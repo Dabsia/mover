@@ -1,9 +1,6 @@
 import React from "react";
-import nextBtn from "../Assets/Next.svg"
-import backBtn from "../Assets/Back.svg"
-import dp from "../Assets/Male.svg"
-import "./testimonials.css"
 
+import "./testimonials.css"
 
 const testimonialsAboutUs = () => {
     return (
@@ -14,8 +11,8 @@ const testimonialsAboutUs = () => {
                     <h3>Don't just take our word for it,
                         Here is what our users are saying</h3>
                     <div className="text_head_btn">
-                        <img className="img_btn" src={nextBtn} alt="" />
-                        <img className="img_btn" src={backBtn} alt="" />
+                        <img className="img_btn" src="/assets/Next.svg" alt="" />
+                        <img className="img_btn" src="/assets/Back.svg" alt="" />
                     </div>
                 </div>
             </div>
@@ -31,7 +28,7 @@ const testimonialsAboutUs = () => {
                     </span>
                     <div className="test_people_detail">
                         <div>
-                            <img src={dp} alt="" />
+                            <img src="/assets/Male.svg" alt="" />
                         </div>
                         <div className="test_people_name">
                             <span>Chidozie Usman</span>
@@ -50,7 +47,7 @@ const testimonialsAboutUs = () => {
                     </span>
                     <div className="test_people_detail">
                         <div>
-                            <img src={dp} alt="" />
+                            <img src="/assets/Male.svg" alt="" />
                         </div>
                         <div className="test_people_name">
                             <span>Chidozie Usman</span>
@@ -69,7 +66,7 @@ const testimonialsAboutUs = () => {
                     </span>
                     <div className="test_people_detail">
                         <div>
-                            <img src={dp} alt="" />
+                            <img src="/assets/Male.svg" alt="" />
                         </div>
                         <div className="test_people_name">
                             <span>Chidozie Usman</span>

@@ -14,13 +14,7 @@ import React, { useEffect, useState } from "react";
 // import cancalledIcon from "../Assets/cancelled-icon.svg"
 // import completedSignal from "../Assets/completed-signal.svg"
 // import cancelledSignal from "../Assets/cancelled-signal.svg"
-import searchIcon from "../Assets/search-01.svg"
-import filterIcon from "../Assets/filter-horizontal.svg"
-import refreshIcon from "../Assets/refresh (1).svg"
-import arrowDown from "../Assets/arrow-down-02.svg"
-import avatar from "../Assets/Gb-Avatar.svg"
-import dot from "../Assets/canceled_dot.svg"
-import viewMore from "../Assets/Eye.svg"
+
 import "./cancelledJobs.css"
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
@@ -136,19 +130,19 @@ const CompletedJobs = () => {
                     <div className="right_table_head">
                         <div className="search_icon">
                             <input type="text" placeholder="Search" />
-                            {/* <img src={searchIcon} alt="" /> */}
+                            {/* <img src="/assets/search-01.svg" alt="" /> */}
                             <img src="/images/search-01.svg" alt="" />
                         </div>
                         <div className="filter_con">
                             <span>
                                 <img src="/images/filter-horizontal.svg" alt="" />
-                                {/* <img src={filterIcon} alt="" /> */}
+                                {/* <img src="/assets/filter-horizontal.svg" alt="" /> */}
                             </span>
                             <span>Filter</span>
                         </div>
                         <div className="refresh">
                             <img src="/images/refresh (1).svg" alt="" />
-                            {/* <img src={refreshIcon} alt="" /> */}
+                            {/* <img src="/assets/refresh (1).svg" alt="" /> */}
                         </div>
                     </div>
                 </div>
@@ -159,25 +153,25 @@ const CompletedJobs = () => {
                                 <th>
                                     <div>
                                         <span>Name</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Move Summary</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Status</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Progress</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
@@ -250,7 +244,7 @@ const CompletedJobs = () => {
                                         <div className="name_td td">
                                             <div>
                                                 <img src="/images/Gb-Avatar.svg" alt="" />
-                                                {/* <img src={avatar} alt="user-initials" /> */}
+                                                {/* <img src="/assets/Gb-Avatar.svg" alt="user-initials" /> */}
                                             </div>
                                             <div className="name_text">
                                                 <span>{job.fullName}</span>
@@ -268,7 +262,7 @@ const CompletedJobs = () => {
                                         <div className="status_cancel td">
                                             <span>
                                                 <img src="/images/canceled_dot.svg" alt="" />
-                                                {/* <img src={dot} alt="" /> */}
+                                                {/* <img src="/assets/canceled_dot.svg" alt="" /> */}
                                             </span>
                                             <span>Cancelled</span>
                                         </div>
@@ -279,7 +273,7 @@ const CompletedJobs = () => {
                                         </div>
                                     </td>
                                     <td className="view" onClick={() => handleViewMore(job.moveCode, job.moveId)}>
-                                        {/* <img src={viewMore} alt="view more" /> */}
+                                        {/* <img src="/assets/Eye.svg" alt="view more" /> */}
                                         <img src="/images/Eye.svg" alt="" />
                                     </td>
                                 </tr>

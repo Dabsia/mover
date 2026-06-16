@@ -1,9 +1,5 @@
 import React from "react";
-import residentalMoving from "../Assets/residential-moving.svg";
-import customizeMoving from "../Assets/customize-moving.svg";
-import customerSolution from "../Assets/customer-solution.svg";
-import technologyLogistics from "../Assets/technology-logistics.svg";
-import imageRecognition from "../Assets/image-recognition.svg";
+
 import "./ourServices.css";
 import { useTranslation } from "react-i18next";
 
@@ -20,29 +16,29 @@ const OurServices = () => {
         <div>
           <div className="our_services_card_container">
             <div className="our_services_card">
-              <img src={residentalMoving} alt="" />
+              <img src="/assets/residential-moving.svg" alt="" />
               <h3>{t("services.service1Title")}</h3>
               <span>{t("services.service1Desc")}</span>
             </div>
             <div className="our_services_card">
-              <img src={customizeMoving} alt="" />
+              <img src="/assets/customize-moving.svg" alt="" />
               <h3>{t("services.service2Title")}</h3>
               <span>{t("services.service2Desc")}</span>
             </div>
             <div className="our_services_card">
-              <img src={customerSolution} alt="" />
+              <img src="/assets/customer-solution.svg" alt="" />
               <h3>{t("services.service3Title")}</h3>
               <span>{t("services.service3Desc")}</span>
             </div>
           </div>
           <div className="our_services_card_sub_container">
             <div className="our_services_card_sub">
-              <img src={technologyLogistics} alt="" />
+              <img src="/assets/technology-logistics.svg" alt="" />
               <h3>{t("services.service4Title")}</h3>
               <span>{t("services.service4Desc")}</span>
             </div>
             <div className="our_services_card_sub">
-              <img src={imageRecognition} alt="" />
+              <img src="/assets/image-recognition.svg" alt="" />
               <h3>{t("services.service5Title")}</h3>
               <span>{t("services.service5Desc")}</span>
             </div>

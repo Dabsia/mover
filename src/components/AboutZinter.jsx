@@ -1,7 +1,6 @@
 import React from "react";
 import ZoomingCardAboutUs from "./ZoomingCardAboutUs";
-import smallImg from "../Assets/small-pictures.svg";
-import arrowDown from "../Assets/arrow-down-pictures.svg";
+
 import "./aboutZinter.css";
 import { useTranslation } from "react-i18next";
 
@@ -24,14 +23,14 @@ const AboutZinter = () => {
           <div className="inner_card w-full">
             <div className="small_picture_container">
               <span className="small_picture">
-                <img src={smallImg} alt="" />
+                <img src="/assets/small-pictures.svg" alt="" />
               </span>
               <span className="small_picture_text">
                 <p>A strong team of highly skilled and disciplined people</p>
               </span>
             </div>
             <div className="arrow_down">
-              <img src={arrowDown} alt="" />
+              <img src="/assets/arrow-down-pictures.svg" alt="" />
             </div>
           </div>
         </div>

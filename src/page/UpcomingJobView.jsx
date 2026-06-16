@@ -1,10 +1,9 @@
 import React, { useEffect, useState } from 'react'
 import "./upcomingJobView.css"
 import ZinterHeaderPartner from "../components/ZinterHeaderPartner";
-import arrowBack from "../Assets/arrow-back-btn.svg"
+
 // import dot from "../Assets/Dot.svg"
-import dotCompleted from "../Assets/completed_dot.svg"
-import movingFromIcon from "../Assets/point-a.svg"
+
 import MovementMap from "../components/GoogleMapMove";
 // import displayPicture from "../Assets/avatar-icon.svg"
 // import sofaIcon from "../Assets/sofa-03.svg"
@@ -23,19 +22,9 @@ import MovementMap from "../components/GoogleMapMove";
 // import bookShelf from "../Assets/bookshelf-02.svg"
 // import monitorIcon from "../Assets/modern-tv.svg"
 // import chairIcon from "../Assets/chair-02.svg"
-import calendarIcon from "../Assets/calendar-minus-02.svg"
-import messageIcon from "../Assets/icon-park-outline_message.svg"
-import closeIcon from "../Assets/close-modal-icon.svg"
-import locationIcon from "../Assets/location-icon.svg"
-import destinationIcon from "../Assets/destination-icon.svg"
-import doubleCheckIcon from "../Assets/double-checked.svg"
-import clickedRadioIcon from "../Assets/clicked-radio-btn.svg"
-import dropdown from "../Assets/arrow-down-dropdown.svg"
-import sucessIcon from "../Assets/success-good-tick.svg"
+
 import { useQuery } from "@tanstack/react-query";
-import calendarBlackAndWhite from "../Assets/calendar-black-icon.svg"
-import checkedBoxIcon from "../Assets/Gb-Checkbox.svg"
-import movingTruckIcon from "../Assets/moving_truck_icon.svg"
+
 import { useNavigate } from "react-router-dom";
 import { moveDetails } from '../api/moveDetails';
 import Loader from '../components/loader';
@@ -43,8 +32,6 @@ import { endMove, logArrival } from '../api/tracking';
 import { startMove } from '../api/tracking';
 import Toast from '../components/toast';
 import { trackMove } from '../api/moveDetails';
-
-
 
 const UpcomingJobView = () => {
     const [showMoveChecklist, setShowMoveChecklist] = useState(false)
@@ -137,12 +124,10 @@ const UpcomingJobView = () => {
         }
     };
 
-
     const logArrivalBtn = () => {
         if (moveCode) {
             // debugger
             refetch();
-
 
         }
 
@@ -168,7 +153,6 @@ const UpcomingJobView = () => {
                 setShowMoveSuccess(true)
                 setShowMoveChecklist(false)
             }
-
 
         }
         catch (e) {
@@ -236,7 +220,6 @@ const UpcomingJobView = () => {
                     setCurrentStep(0);
                 }
 
-
                 setShowMoveChecklist(true);
 
             }
@@ -276,7 +259,6 @@ const UpcomingJobView = () => {
 
     // const 
 
-
     return (
         <div>
             <div>
@@ -287,7 +269,7 @@ const UpcomingJobView = () => {
                 <div className="new_jobs_header">
                     <button onClick={handdleGoBack}>
                         <span>Upcoming Move</span>
-                        <img src={arrowBack} alt="" />
+                        <img src="/assets/arrow-back-btn.svg" alt="" />
                     </button>
                     <span className="new_jobs_head_text">View Job Details</span>
                 </div>
@@ -308,7 +290,7 @@ const UpcomingJobView = () => {
                                     <h2>{fullName}</h2>
                                     <div className="">
                                         <div className="header_upcoming_detail_new">
-                                            <span><img src={calendarIcon} alt="" /></span>
+                                            <span><img src="/assets/calendar-minus-02.svg" alt="" /></span>
                                             <span>Upcoming</span>
                                         </div>
                                         <span className="header_upcoming_date">  {moveDate.split("T")[0]}</span>
@@ -319,7 +301,7 @@ const UpcomingJobView = () => {
                             </div>
                             <div>
                                 <button className="msg_btn">
-                                    {/* <span><img src={messageIcon} alt="" /></span>
+                                    {/* <span><img src="/assets/icon-park-outline_message.svg" alt="" /></span>
                                     <span className='msg_btn_text'>MESSAGE</span> */}
                                 </button>
                             </div>
@@ -651,7 +633,7 @@ const UpcomingJobView = () => {
                                         <h2>{fullName}</h2>
                                         <div className="header_upcoming">
                                             <div className="header_upcoming_detail_timeline">
-                                                <span><img src={dotCompleted} alt="" /></span>
+                                                <span><img src="/assets/completed_dot.svg" alt="" /></span>
                                                 <span>Completed</span>
                                             </div>
                                             <div className='header_progress_bar'>
@@ -669,32 +651,32 @@ const UpcomingJobView = () => {
                             </div>}
                         {showMoveTimeline && <div className='body_timeline_container'>
                             <div className='body_timeline_first'>
-                                <img src={clickedRadioIcon} alt="" />
-                                <img src={doubleCheckIcon} alt="" />
+                                <img src="/assets/clicked-radio-btn.svg" alt="" />
+                                <img src="/assets/double-checked.svg" alt="" />
                                 <div className='body_timeline_head'>
                                     <h1>Payment Made</h1>
                                     <span>Payment confirmed and tracking code generated </span>
                                 </div>
                             </div>
                             <div className='body_timeline_first'>
-                                <img src={clickedRadioIcon} alt="" />
-                                <img src={calendarBlackAndWhite} alt="" />
+                                <img src="/assets/clicked-radio-btn.svg" alt="" />
+                                <img src="/assets/calendar-black-icon.svg" alt="" />
                                 <div className='body_timeline_head'>
                                     <h1>Pickup & Move Start</h1>
                                     <span>Mover navigates to pickup location on schedule. </span>
                                 </div>
                             </div>
                             <div className='body_timeline_second'>
-                                <img src={checkedBoxIcon} alt="" />
+                                <img src="/assets/Gb-Checkbox.svg" alt="" />
                                 <span>Arrived at pickup location</span>
                             </div>
                             <div className='body_timeline_second'>
-                                <img src={checkedBoxIcon} alt="" />
+                                <img src="/assets/Gb-Checkbox.svg" alt="" />
                                 <span>Loaded Inventory into truck</span>
                             </div>
                             <div className='body_timeline_second_sub'>
                                 <div className='body_timeline_second'>
-                                    <img src={checkedBoxIcon} alt="" />
+                                    <img src="/assets/Gb-Checkbox.svg" alt="" />
                                     <span><span className="bolder_text" > Move Started </span >using customer tracking code</span>
                                 </div>
                                 <div className='body_timeline_code'>
@@ -702,20 +684,20 @@ const UpcomingJobView = () => {
                                 </div>
                             </div>
                             <div className='body_timeline_first'>
-                                <img src={clickedRadioIcon} alt="" />
-                                <img src={movingTruckIcon} alt="" />
+                                <img src="/assets/clicked-radio-btn.svg" alt="" />
+                                <img src="/assets/moving_truck_icon.svg" alt="" />
                                 <div className='body_timeline_head'>
                                     <h1>Mover In Transit</h1>
                                     <span>Driver moving from pickup location to drop-off location</span>
                                 </div>
                             </div>
                             <div className='body_timeline_second'>
-                                <img src={checkedBoxIcon} alt="" />
+                                <img src="/assets/Gb-Checkbox.svg" alt="" />
                                 <span>Arrived Drop-off Location</span>
                             </div>
                             <div className='body_timeline_second_sub'>
                                 <div className='body_timeline_second'>
-                                    <img src={checkedBoxIcon} alt="" />
+                                    <img src="/assets/Gb-Checkbox.svg" alt="" />
                                     <span><span className='bolder_text' > Move Completed </span >Move Confirmed with tracking code</span>
                                 </div>
                                 <div className='body_timeline_code'>
@@ -735,11 +717,10 @@ const UpcomingJobView = () => {
             {showMoveChecklist && <div className="provide_quote_container">
                 <div className="provide_quote_body">
                     <div className="header_quote">
-                        <img onClick={closeAllModal} src={closeIcon} alt="" />
+                        <img onClick={closeAllModal} src="/assets/close-modal-icon.svg" alt="" />
                         <span>Move Checklist</span>
                     </div>
                     <div className="body_quote_container">
-
 
                         <div className="body_quote">
                             <div className="body_quote_first">
@@ -757,11 +738,11 @@ const UpcomingJobView = () => {
                             <div className="body_quote_location_items">
                                 <div className="body_quote_location_upcoming">
                                     <div className="body_quote_start">
-                                        <img src={locationIcon} alt="" />
+                                        <img src="/assets/location-icon.svg" alt="" />
                                         <span>{from}</span>
                                     </div>
                                     <div className="body_quote_start">
-                                        <img src={destinationIcon} alt="" />
+                                        <img src="/assets/destination-icon.svg" alt="" />
                                         <span>{to}</span>
                                     </div>
                                 </div>
@@ -878,12 +859,12 @@ const UpcomingJobView = () => {
                 <div className='provide_quote_body'>
                     <div className="body_quote_first">
                         <div className="header_quote_sucess">
-                            <img onClick={closeAllModal} src={closeIcon} alt="" />
+                            <img onClick={closeAllModal} src="/assets/close-modal-icon.svg" alt="" />
                             {/* <span>Move Checklist</span> */}
                         </div>
                     </div>
                     <div className='body_quote_success'>
-                        <img src={sucessIcon} alt="" />
+                        <img src="/assets/success-good-tick.svg" alt="" />
                         <h1>Move Completed</h1>
                         <span>A notification will be sent to the customer’s containing move receipt</span>
                     </div>

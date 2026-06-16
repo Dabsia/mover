@@ -15,21 +15,10 @@ import { useNavigate } from "react-router-dom";
 // import cancalledIcon from "../Assets/cancelled-icon.svg"
 // import completedSignal from "../Assets/completed-signal.svg"
 // import cancelledSignal from "../Assets/cancelled-signal.svg"
-import searchIcon from "../Assets/search-01.svg"
-import filterIcon from "../Assets/filter-horizontal.svg"
-import refreshIcon from "../Assets/refresh (1).svg"
-import arrowDown from "../Assets/arrow-down-02.svg"
-import avatar from "../Assets/Gb-Avatar.svg"
+
 // import dot from "../Assets/Dot.svg"
-import dot from "../Assets/intransit_dot.svg"
-import dotActive from "../Assets/completed_dot.svg"
-import dotSuspended from "../Assets/canceled_dot.svg"
-import viewMore from "../Assets/Eye.svg"
 
 import "./allJobs.css"
-
-
-
 
 const TreatedIssues = () => {
     const navigate = useNavigate()
@@ -49,16 +38,16 @@ const TreatedIssues = () => {
                     <div className="right_table_head">
                         <div className="search_icon">
                             <input type="text" placeholder="Search" />
-                            <img src={searchIcon} alt="" />
+                            <img src="/assets/search-01.svg" alt="" />
                         </div>
                         <div className="filter_con">
                             <span>
-                                <img src={filterIcon} alt="" />
+                                <img src="/assets/filter-horizontal.svg" alt="" />
                             </span>
                             <span>Filter</span>
                         </div>
                         <div className="refresh">
-                            <img src={refreshIcon} alt="" />
+                            <img src="/assets/refresh (1).svg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -69,25 +58,25 @@ const TreatedIssues = () => {
                                 <th>
                                     <div>
                                         <span>Reporting User</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Report Types</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Status</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Date Registration</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
 
@@ -102,7 +91,7 @@ const TreatedIssues = () => {
                                 <td>
                                     <div className="name_td td">
                                         {/* <div>
-                                            <img src={avatar} alt="user-initials" />
+                                            <img src="/assets/Gb-Avatar.svg" alt="user-initials" />
                                         </div> */}
                                         <div className="name_text">
                                             <span>Anna van Dijk</span>
@@ -119,8 +108,8 @@ const TreatedIssues = () => {
                                 <td>
                                     <div className="status_active td">
                                         <span>
-                                            <img src={dotActive} alt="" />
-                                            {/* <img src={dot} alt="" /> */}
+                                            <img src="/assets/completed_dot.svg" alt="" />
+                                            {/* <img src="/assets/intransit_dot.svg" alt="" /> */}
                                         </span>
                                         <span>
                                             Treated Action
@@ -135,7 +124,7 @@ const TreatedIssues = () => {
                                 </td>
 
                                 <td className="view" onClick={handleViewMore}>
-                                    <img src={viewMore} alt="view more" />
+                                    <img src="/assets/Eye.svg" alt="view more" />
                                 </td>
                             </tr>
                         

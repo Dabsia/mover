@@ -34,21 +34,21 @@
 //                 <Link to="/overview">
 //                     <div className="side_bar_child">
 
-//                         <img src={overviewIcon} alt="" />
+//                         <img src="/assets/dasboard-icon.svg" alt="" />
 //                         <span>Overview</span>
 
 //                     </div>
 //                 </Link>
 //                 <Link to="/calendar">
 //                 <div className="side_bar_child_active">
-//                     <img src={calendarIcon} alt="" />
+//                     <img src="/assets/calendar-icon.svg" alt="" />
 //                     <span>Calendar</span>
 
 //                 </div>
 //                 </Link>
 //                 <Link to="/jobs"> 
 //                 <div className="side_bar_child">
-//                     <img src={jobsIcon} alt="" />
+//                     <img src="/assets/jobs-icon.svg" alt="" />
 //                     <span>Jobs</span>
 //                 </div>
 //                 </Link>
@@ -90,18 +90,10 @@
 import React, { useState } from "react";
 import "./sideBar.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import overviewIcon from "../Assets/dasboard-icon.svg";
-import overviewIconActive from "../Assets/overview-active-icon.svg"
-import calendarIcon from "../Assets/calendar-icon.svg";
-import calenarIconActive from "../Assets/calendar-active-icon.svg"
-import jobsIcon from "../Assets/jobs-icon.svg";
-import jobsIconActive from "../Assets/jobs-active-icon.svg"
+
 // import supportIcon from "../Assets/support-icon.svg";
 // import sidebarIcon from "../Assets/sidebar-icon.svg";
-import resolutionIcon from "../Assets/resolutionIcon.svg"
-import resolutionIconActive from "../Assets/resolutionIconActive.svg"
-import transactionIcon from "../Assets/credit-card.svg"
-import transactionIconActive from "../Assets/credit-card-active.svg"
+
 import LogoutModal from "./Logout";
 // import logoAndText from "../Assets/logo-text.svg";
 // import notificationLogo from "../Assets/notification-03.svg";
@@ -109,7 +101,6 @@ import LogoutModal from "./Logout";
 // import helpLogo from "../Assets/help-circle.svg";
 // import logoMobileScreen from "../Assets/logo_mobile_screen.svg"
 // import hamburgerBtn from "../Assets/hamburger_btn.svg"
-
 
 const SideBar = () => {
     const [isOpen, setIsOpen] = useState(false);
@@ -121,16 +112,16 @@ const SideBar = () => {
     const navigate = useNavigate()
 
     const navItems = [
-        { path: "/overview", icon: overviewIcon, activeIcon: overviewIconActive, label: "Overview" },
-        { path: "/calendar", icon: calendarIcon, activeIcon: calenarIconActive, label: "Upcoming" },
-        { path: "/jobs", icon: jobsIcon, activeIcon: jobsIconActive, label: "Jobs" },
-        { path: "/payment", icon: transactionIcon, activeIcon: transactionIconActive, label: "Payment" },
-        {  icon: resolutionIcon, activeIcon: resolutionIconActive, label: "Resolution" }
+        { path: "/overview", icon: "/assets/dasboard-icon.svg", activeIcon: "/assets/overview-active-icon.svg", label: "Overview" },
+        { path: "/calendar", icon: "/assets/calendar-icon.svg", activeIcon: "/assets/calendar-active-icon.svg", label: "Upcoming" },
+        { path: "/jobs", icon: "/assets/jobs-icon.svg", activeIcon: "/assets/jobs-active-icon.svg", label: "Jobs" },
+        { path: "/payment", icon: "/assets/credit-card.svg", activeIcon: "/assets/credit-card-active.svg", label: "Payment" },
+        { icon: "/assets/resolutionIcon.svg", activeIcon: "/assets/resolutionIconActive.svg", label: "Resolution" }
     ];
 
     const navItemsMobile = [
-        { path: "/overview", icon: overviewIcon, activeIcon: overviewIconActive, label: "Overview" },
-        { path: "/calendar", icon: calendarIcon, activeIcon: calenarIconActive, label: "Upcoming" },
+        { path: "/overview", icon: "/assets/dasboard-icon.svg", activeIcon: "/assets/overview-active-icon.svg", label: "Overview" },
+        { path: "/calendar", icon: "/assets/calendar-icon.svg", activeIcon: "/assets/calendar-active-icon.svg", label: "Upcoming" },
     ];
 
     const showLogoutFunc = () => {
@@ -213,7 +204,6 @@ const SideBar = () => {
                         {/* <img src="/images/notification-03.svg" alt="" /> */}
                         <img className="logout" onClick={showLogoutFunc} src="/images/logout-03.svg" alt="" />
 
-
                     </div>
                 </div>
                 {/* <div className={`side_bar_mobile_all ${isOpen ? "open" : ""}`}>
@@ -278,7 +268,6 @@ const SideBar = () => {
                     {/* Overlay (click to close sidebar) */}
                     <div className="sidebar_overlay" onClick={toggleSidebar}></div>
                 </div>
-
 
             </div>
             <LogoutModal

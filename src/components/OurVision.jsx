@@ -1,7 +1,5 @@
 import React from "react";
-import userSatisfaction from "../Assets/user-satisfaction.svg";
-import innovation from "../Assets/innovation.svg";
-import simplicity from "../Assets/simplicity.svg";
+
 import { useNavigate } from "react-router-dom";
 import "./ourVision.css";
 import { useTranslation } from "react-i18next";
@@ -18,21 +16,21 @@ const OurVision = () => {
           <div>
             <div className="card_our_vision">
               <div className="first_card">
-                <img src={userSatisfaction} alt="Thumbs Up Icon" />
+                <img src="/assets/user-satisfaction.svg" alt="Thumbs Up Icon" />
                 <div className="first_card_text">
                   <span>{t("vision.vision1Title")}</span>
                   <span>{t("vision.vision1Desc")}</span>
                 </div>
               </div>
               <div className="first_card diff_class">
-                <img src={innovation} alt="" />
+                <img src="/assets/innovation.svg" alt="" />
                 <div className="first_card_text">
                   <span>{t("vision.vision2Title")}</span>
                   <span>{t("vision.vision2Desc")}</span>
                 </div>
               </div>
               <div className="first_card">
-                <img src={simplicity} alt="" />
+                <img src="/assets/simplicity.svg" alt="" />
                 <div className="first_card_text">
                   <span>{t("vision.vision3Title")}</span>
                   <span>{t("vision.vision3Desc")}</span>

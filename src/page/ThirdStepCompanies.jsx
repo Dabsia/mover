@@ -3,18 +3,7 @@ import "./thirdStepCompanies.css"
 import FirstCardToggle from "../components/FirstCardToggle";
 import RichTextEditor from "../components/RichTextEditor";
 import AccountSuccessMessage from "../components/AccountSuccessModal";
-import stepperIconSecond from "../Assets/third-stepper-icon.svg"
-import stepperMobileThird from "../Assets/mobile-stepper-icon-third.svg"
-import dropdown from "../Assets/arrow-down-dropdown.svg"
-import imageUpload from "../Assets/image-upload.svg"
-import coverPhotoIcon from "../Assets/album-02.svg"
-import cancelIcon from "../Assets/cancel-01.svg"
-import firstPhoto from "../Assets/cover-photo.svg"
-import secondPhoto from "../Assets/cover-photo-second.svg"
-import thirdPhoto from "../Assets/cover-photo-third.svg"
-import fourthPhoto from "../Assets/cover-photo-four.svg"
-import fifthPhoto from "../Assets/cover-photo-five.svg"
-import sixthPhoto from "../Assets/cover-photo-six.svg"
+
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
 import { fetchProvince } from "../api/agentApi";
@@ -73,13 +62,11 @@ const ThirdStepCompanies = () => {
         }
     }, [errorReg]);
 
-
     useEffect(() => {
         if (data?.result) {
             setAllProvinces(data.result);
         }
     }, [data]);
-
 
     useEffect(() => {
         const handleClickOutside = (event) => {
@@ -156,12 +143,9 @@ const ThirdStepCompanies = () => {
         setShowOptions(false)
     }
 
-
     const handleCloseModal = () => {
         showSubmitErr(false)
     }
-
-
 
     const openSuccessMessage = async () => {
         if (
@@ -209,10 +193,10 @@ const ThirdStepCompanies = () => {
                     ))}
                 </ul> */}
                 <div className="stepper_icon">
-                    {/* <img className="mobile_only_stepper_icon" src={stepperMobileThird} alt="" /> */}
-                    <img className="mobile_only_stepper_icon" src="/images/mobile-stepper-icon-third.svg" alt="" />
-                    {/* <img className="laptop_only_stepper_icon" src={stepperIconSecond} alt="" /> */}
-                    <img className="laptop_only_stepper_icon" src="/images/third-stepper-icon.svg" alt="" />
+                    {/* <img loading="lazy" className="mobile_only_stepper_icon" src={stepperMobileThird} alt="" /> */}
+                    <img loading="lazy" className="mobile_only_stepper_icon" src="/images/mobile-stepper-icon-third.svg" alt="" />
+                    {/* <img loading="lazy" className="laptop_only_stepper_icon" src={stepperIconSecond} alt="" /> */}
+                    <img loading="lazy" className="laptop_only_stepper_icon" src="/images/third-stepper-icon.svg" alt="" />
 
                 </div>
                 <div className="company_header">
@@ -230,8 +214,8 @@ const ThirdStepCompanies = () => {
                             backgroundColor: coverPhoto ? 'transparent' : 'rgba(240, 249, 253, 1)',
                         }}>
                         {!coverPhoto && <button onClick={openMoreOptions}>
-                            {/* <img src={imageUpload} alt="" /> */}
-                            <img src="/images/image-upload.svg" alt="" />
+                            {/* <img loading="lazy" src={imageUpload} alt="" /> */}
+                            <img loading="lazy" src="/images/image-upload.svg" alt="" />
                             <span>Upload cover photo</span>
 
                         </button>}
@@ -239,13 +223,13 @@ const ThirdStepCompanies = () => {
                         {showMoreOptions &&
                             <div className="choose_photo_container">
                                 <div className="choose_photo_btn" onClick={openCoverPhoto}>
-                                    {/* <img src={coverPhotoIcon} alt="" /> */}
-                                    <img src="/images/album-02.svg" alt="" />
+                                    {/* <img loading="lazy" src={coverPhotoIcon} alt="" /> */}
+                                    <img loading="lazy" src="/images/album-02.svg" alt="" />
                                     <span>Choose cover photo</span>
                                 </div>
                                 <div className="choose_photo_btn" onClick={() => fileInputRef.current && fileInputRef.current.click()}>
-                                    {/* <img src={imageUpload} alt="" /> */}
-                                    <img src="/images/image-upload.svg" alt="" />
+                                    {/* <img loading="lazy" src={imageUpload} alt="" /> */}
+                                    <img loading="lazy" src="/images/image-upload.svg" alt="" />
                                     <span>Upload from device</span>
                                     <input
                                         type="file"
@@ -258,13 +242,12 @@ const ThirdStepCompanies = () => {
                             </div>}
                         {coverPhoto && <div className="inner_upload_section">
                             <button onClick={openMoreOptions}>
-                                <img src="/images/image-upload.svg" alt="" />
-                               
+                                <img loading="lazy" src="/images/image-upload.svg" alt="" />
+
                                 <span>Change Image</span>
                             </button>
 
                         </div>}
-
 
                     </div>
                     <div className="upload_container_note" >
@@ -299,7 +282,7 @@ const ThirdStepCompanies = () => {
                         ))}
                     </div>
 
-                    <img className="dropdown_icon" src="/images/arrow-down-dropdown.svg" alt="" onClick={(e) => {
+                    <img loading="lazy" className="dropdown_icon" src="/images/arrow-down-dropdown.svg" alt="" onClick={(e) => {
                         e.stopPropagation();
                         setShowDropdown((prev) => !prev);
                     }} />
@@ -320,7 +303,6 @@ const ThirdStepCompanies = () => {
                     )}
                 </div>
 
-
                 <div className="input_multiple_sub">
                     <span>Company Overview</span>
                     <div className="rich_text">
@@ -338,26 +320,26 @@ const ThirdStepCompanies = () => {
                     <div className="cover_photo_container">
                         <div className="cover_photo_head">
                             <h2>Select cover photo</h2>
-                            <img onClick={hideCoverPhoto} src="/images/cancel-01.svg" alt="" />
+                            <img loading="lazy" onClick={hideCoverPhoto} src="/images/cancel-01.svg" alt="" />
                         </div>
                         <div className="cover_photo_body">
                             <div>
-                                <img src="/images/cover-photo.svg" alt="" onClick={() => handleCover(firstPhoto)} />
+                                <img loading="lazy" src="/assets/cover-photo.svg" alt="" onClick={() => handleCover("/assets/cover-photo.svg")} />
                             </div>
                             <div>
-                                <img src="/images/cover-photo-second.svg" alt="" onClick={() => handleCover(secondPhoto)} />
+                                <img loading="lazy" src="/assets/cover-photo-second.svg" alt="" onClick={() => handleCover("/assets/cover-photo-second.svg")} />
                             </div>
                             <div>
-                                <img src="/images/cover-photo-third.svg" alt="" onClick={() => handleCover(thirdPhoto)} />
+                                <img loading="lazy" src="/assets/cover-photo-third.svg" alt="" onClick={() => handleCover("/assets/cover-photo-third.svg")} />
                             </div>
                             <div>
-                                <img src="/images/cover-photo-four.svg" alt="" onClick={() => handleCover(fourthPhoto)} />
+                                <img loading="lazy" src="/assets/cover-photo-four.svg" alt="" onClick={() => handleCover("/assets/cover-photo-four.svg")} />
                             </div>
                             <div>
-                                <img src="/images/cover-photo-five.svg" alt="" onClick={() => handleCover(fifthPhoto)} />
+                                <img loading="lazy" src="/assets/cover-photo-five.svg" alt="" onClick={() => handleCover("/assets/cover-photo-five.svg")} />
                             </div>
                             <div>
-                                <img src="/images/cover-photo-six.svg" alt="" onClick={() => handleCover(sixthPhoto)} />
+                                <img loading="lazy" src="/assets/cover-photo-six.svg" alt="" onClick={() => handleCover("/assets/cover-photo-six.svg")} />
                             </div>
                         </div>
                     </div>
@@ -381,9 +363,6 @@ const ThirdStepCompanies = () => {
                     </div>
                 </div>
             }
-
-
-
 
             {isLoadingReg && <Loader />}
             {isLoading && <Loader />}

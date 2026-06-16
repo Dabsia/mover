@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import cancelIcon from "../Assets/cancel-01.svg"
+
 import "./verifyToken.css"
 
 const VerifyTokenModal = ({handleSubmit, closeModal }) => {
@@ -20,13 +20,12 @@ const VerifyTokenModal = ({handleSubmit, closeModal }) => {
     };
  
 
-
     return (
         <div className="verify_background">
             <div className="verify_token_container">
                 <div className="verify_token_head">
                     <span>Verify Email Address</span>
-                    <img onClick={closeModal} src={cancelIcon} alt="" />
+                    <img onClick={closeModal} src="/assets/cancel-01.svg" alt="" />
                 </div>
                 <div className="otp_body">
                     <div className="enter_otp_text">

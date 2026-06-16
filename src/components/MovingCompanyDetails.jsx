@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import img from "../Assets/Rectangle 4562.svg";
+
 import { useDispatch, useSelector } from "react-redux";
 import { convertTo12Hour, formatDate, stripPTags } from "../utils";
 import { resetMoversInfo } from "../redux/action";
@@ -193,12 +193,11 @@ const MovingCompanyDetails = ({ makeInActive }) => {
           </div>
         </div>
         <div className="w-full h-[300px] overflow-hidden rounded-[20px] relative">
-          <img
-            src={img}
+          <img src="/assets/Rectangle 4562.svg" alt=""
             className=" w-full h-full object-cover rounded-[25px]"
             alt="hero"
-          />
-          {/* <img src={img || mover?.image} alt="user" className="w-full  " /> */}
+           />
+          {/* <img src="/assets/Rectangle 4562.svg" alt="" alt="user" className="w-full  "  /> */}
           <div className="absolute bottom-[20px] flex justify-center items-center left-[5] w-full  ">
             <div className="w-full px-[23px] ">
               <div className="bg-[#d9d9d9] w-fit flex items-center  p-[10px] rounded-t-[10px] bg-opacity-70 backdrop-blur-sm h-[50px]">

@@ -15,13 +15,7 @@ import { useNavigate } from "react-router-dom";
 // import cancalledIcon from "../Assets/cancelled-icon.svg"
 // import completedSignal from "../Assets/completed-signal.svg"
 // import cancelledSignal from "../Assets/cancelled-signal.svg"
-import searchIcon from "../Assets/search-01.svg"
-import filterIcon from "../Assets/filter-horizontal.svg"
-import refreshIcon from "../Assets/refresh (1).svg"
-import arrowDown from "../Assets/arrow-down-02.svg"
-import avatar from "../Assets/Gb-Avatar.svg"
-import dot from "../Assets/Dot.svg"
-import viewMore from "../Assets/Eye.svg"
+
 import SkeletonLine from "./SkeletonLineLoader";
 import { getAllJobs } from "../api/province";
 import { useQuery } from "@tanstack/react-query";
@@ -50,7 +44,6 @@ const AllJobs = () => {
     //     refetchInterval: false,
     // });
 
-
     const { data, isLoading, error } = useQuery({
         queryKey: ["allJobsSub"]
     })
@@ -64,7 +57,6 @@ const AllJobs = () => {
             setAllJobs([]); // clear jobs while fetching
         }
     }, [isLoading]);
-
 
     useEffect(() => {
         if (data?.result) {
@@ -81,8 +73,6 @@ const AllJobs = () => {
         }
     }, [data, error]);
 
-
-
     useEffect(() => {
         console.log("Updated allJobs:", allJobs);
     }, [allJobs]);
@@ -92,9 +82,6 @@ const AllJobs = () => {
         sessionStorage.setItem('moveId', moveId)
         navigate("/view-new-jobs");
     };
-
-
-
 
     return (
         <div>
@@ -107,7 +94,7 @@ const AllJobs = () => {
                         <div className="search_icon">
                             <input value={searchTerm}
                                 onChange={(e) => setSearchTerm(e.target.value)} type="text" placeholder="Search" />
-                            {/* <img src={searchIcon} alt="" /> */}
+                            {/* <img src="/assets/search-01.svg" alt="" /> */}
                             <img src="/images/search-01.svg" alt="" />
                         </div>
                         {/* <div className="filter_con">
@@ -117,7 +104,7 @@ const AllJobs = () => {
                             <span>Filter</span>
                         </div> */}
                         <div className="refresh">
-                            {/* <img src={refreshIcon} alt="" /> */}
+                            {/* <img src="/assets/refresh (1).svg" alt="" /> */}
                             <img src="/images/refresh (1).svg" alt="" />
                         </div>
                     </div>
@@ -130,28 +117,28 @@ const AllJobs = () => {
                                     <div>
                                         <span>Name</span>
                                         <img src="/images/arrow-down-02.svg" alt="" />
-                                        {/* <img src={arrowDown} alt="" /> */}
+                                        {/* <img src="/assets/arrow-down-02.svg" alt="" /> */}
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Move Summary</span>
                                         <img src="/images/arrow-down-02.svg" alt="" />
-                                        {/* <img src={arrowDown} alt="" /> */}
+                                        {/* <img src="/assets/arrow-down-02.svg" alt="" /> */}
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Status</span>
                                         <img src="/images/arrow-down-02.svg" alt="" />
-                                        {/* <img src={arrowDown} alt="" /> */}
+                                        {/* <img src="/assets/arrow-down-02.svg" alt="" /> */}
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Progress</span>
                                         <img src="/images/arrow-down-02.svg" alt="" />
-                                        {/* <img src={arrowDown} alt="" /> */}
+                                        {/* <img src="/assets/arrow-down-02.svg" alt="" /> */}
                                     </div>
                                 </th>
                                 <th>
@@ -221,7 +208,7 @@ const AllJobs = () => {
                                         <div className="name_td td">
                                             <div>
                                                 <img src="/images/Gb-Avatar.svg" alt="" />
-                                                {/* <img src={avatar} alt="user-initials" /> */}
+                                                {/* <img src="/assets/Gb-Avatar.svg" alt="user-initials" /> */}
                                             </div>
                                             <div className="name_text">
                                                 <span>{job.fullName}</span>
@@ -239,7 +226,7 @@ const AllJobs = () => {
                                         <div className="status td">
                                             <span>
                                                 <img src="/images/Dot.svg" alt="" />
-                                                {/* <img src={dot} alt="" /> */}
+                                                {/* <img src="/assets/Dot.svg" alt="" /> */}
                                             </span>
                                             <span>New Request</span>
                                         </div>
@@ -250,12 +237,11 @@ const AllJobs = () => {
                                         </div>
                                     </td>
                                     <td className="view" onClick={() => handleViewMore(job.moveCode, job.moveId)}>
-                                        {/* <img src={viewMore} alt="view more" /> */}
+                                        {/* <img src="/assets/Eye.svg" alt="view more" /> */}
                                         <img src="/images/Eye.svg" alt="" />
                                     </td>
                                 </tr>
                             ))}
-
 
                         </tbody>
                     </table>

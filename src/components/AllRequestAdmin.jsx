@@ -15,18 +15,8 @@ import { useNavigate } from "react-router-dom";
 // import cancalledIcon from "../Assets/cancelled-icon.svg"
 // import completedSignal from "../Assets/completed-signal.svg"
 // import cancelledSignal from "../Assets/cancelled-signal.svg"
-import searchIcon from "../Assets/search-01.svg"
-import filterIcon from "../Assets/filter-horizontal.svg"
-import refreshIcon from "../Assets/refresh (1).svg"
-import arrowDown from "../Assets/arrow-down-02.svg"
-import avatar from "../Assets/Gb-Avatar.svg"
-import dot from "../Assets/Dot.svg"
-import viewMore from "../Assets/Eye.svg"
 
 import "./allJobs.css"
-
-
-
 
 const AllRequestAdmin = () => {
     const navigate = useNavigate()
@@ -46,16 +36,16 @@ const AllRequestAdmin = () => {
                     <div className="right_table_head">
                         <div className="search_icon">
                             <input type="text" placeholder="Search" />
-                            <img src={searchIcon} alt="" />
+                            <img src="/assets/search-01.svg" alt="" />
                         </div>
                         {/* <div className="filter_con">
                             <span>
-                                <img src={filterIcon} alt="" />
+                                <img src="/assets/filter-horizontal.svg" alt="" />
                             </span>
                             <span>Filter</span>
                         </div> */}
                         <div className="refresh">
-                            <img src={refreshIcon} alt="" />
+                            <img src="/assets/refresh (1).svg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -66,31 +56,31 @@ const AllRequestAdmin = () => {
                                 <th>
                                     <div>
                                         <span>User</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Move Company</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Move Summary</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Status</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Progress</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
@@ -104,7 +94,7 @@ const AllRequestAdmin = () => {
                                 <td>
                                     <div className="name_td td">
                                         <div>
-                                            <img src={avatar} alt="user-initials" />
+                                            <img src="/assets/Gb-Avatar.svg" alt="user-initials" />
                                         </div>
                                         <div className="name_text">
                                             <span>Anna van Dijk</span>
@@ -127,7 +117,7 @@ const AllRequestAdmin = () => {
                                 <td>
                                     <div className="status td">
                                         <span>
-                                            <img src={dot} alt="" />
+                                            <img src="/assets/Dot.svg" alt="" />
                                         </span>
                                         <span>
                                             New Request
@@ -140,7 +130,7 @@ const AllRequestAdmin = () => {
                                     </div>
                                 </td>
                                 <td className="view" onClick={handleViewMore}>
-                                    <img src={viewMore} alt="view more" />
+                                    <img src="/assets/Eye.svg" alt="view more" />
                                 </td>
                             </tr>
                         </tbody>

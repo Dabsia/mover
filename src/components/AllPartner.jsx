@@ -15,20 +15,8 @@ import { useNavigate } from "react-router-dom";
 // import cancalledIcon from "../Assets/cancelled-icon.svg"
 // import completedSignal from "../Assets/completed-signal.svg"
 // import cancelledSignal from "../Assets/cancelled-signal.svg"
-import searchIcon from "../Assets/search-01.svg"
-import filterIcon from "../Assets/filter-horizontal.svg"
-import refreshIcon from "../Assets/refresh (1).svg"
-import arrowDown from "../Assets/arrow-down-02.svg"
-import avatar from "../Assets/Gb-Avatar.svg"
-import dot from "../Assets/Dot.svg"
-import dotActive from "../Assets/completed_dot.svg"
-import dotSuspended from "../Assets/canceled_dot.svg"
-import viewMore from "../Assets/Eye.svg"
 
 import "./allJobs.css"
-
-
-
 
 const AllPartner = () => {
     const navigate = useNavigate()
@@ -48,16 +36,16 @@ const AllPartner = () => {
                     <div className="right_table_head">
                         <div className="search_icon">
                             <input type="text" placeholder="Search" />
-                            <img src={searchIcon} alt="" />
+                            <img src="/assets/search-01.svg" alt="" />
                         </div>
                         {/* <div className="filter_con">
                             <span>
-                                <img src={filterIcon} alt="" />
+                                <img src="/assets/filter-horizontal.svg" alt="" />
                             </span>
                             <span>Filter</span>
                         </div> */}
                         <div className="refresh">
-                            <img src={refreshIcon} alt="" />
+                            <img src="/assets/refresh (1).svg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -68,31 +56,31 @@ const AllPartner = () => {
                                 <th>
                                     <div>
                                         <span>Moving Company</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>All Jobs</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Total Revenue</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Date Registration</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Status</span>
-                                        <img src={arrowDown} alt="" />
+                                        <img src="/assets/arrow-down-02.svg" alt="" />
                                     </div>
                                 </th>
                                 <th>
@@ -106,7 +94,7 @@ const AllPartner = () => {
                                 <td>
                                     <div className="name_td td">
                                         {/* <div>
-                                            <img src={avatar} alt="user-initials" />
+                                            <img src="/assets/Gb-Avatar.svg" alt="user-initials" />
                                         </div> */}
                                         <div className="name_text">
                                             <span>Urban Movers</span>
@@ -135,7 +123,7 @@ const AllPartner = () => {
                                 <td>
                                     <div className="status_active td">
                                         <span>
-                                            <img src={dotActive} alt="" />
+                                            <img src="/assets/completed_dot.svg" alt="" />
                                         </span>
                                         <span>
                                             Active
@@ -143,14 +131,14 @@ const AllPartner = () => {
                                     </div>
                                 </td>
                                 <td className="view" onClick={handleViewMore}>
-                                    <img src={viewMore} alt="view more" />
+                                    <img src="/assets/Eye.svg" alt="view more" />
                                 </td>
                             </tr>
                             <tr>
                                 <td>
                                     <div className="name_td td">
                                         {/* <div>
-                                            <img src={avatar} alt="user-initials" />
+                                            <img src="/assets/Gb-Avatar.svg" alt="user-initials" />
                                         </div> */}
                                         <div className="name_text">
                                             <span>Urban Movers</span>
@@ -179,7 +167,7 @@ const AllPartner = () => {
                                 <td>
                                     <div className="status_suspended td">
                                         <span>
-                                            <img src={dotSuspended} alt="" />
+                                            <img src="/assets/canceled_dot.svg" alt="" />
                                         </span>
                                         <span>
                                             Suspended
@@ -187,7 +175,7 @@ const AllPartner = () => {
                                     </div>
                                 </td>
                                 <td className="view" onClick={handleViewMore}>
-                                    <img src={viewMore} alt="view more" />
+                                    <img src="/assets/Eye.svg" alt="view more" />
                                 </td>
                             </tr>
                         </tbody>

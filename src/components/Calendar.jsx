@@ -100,7 +100,7 @@
 //                             fontSize: '12px', 
 //                             color: 'rgba(158, 158, 158, 1)'
 //                     }} />
-//                     <img src={searchIcon} alt=""  style={{
+//                     <img src="/assets/search-01.svg" alt=""  style={{
 //                             position: 'absolute',
 //                             top: '20%',
 //                             left: '7px',
@@ -108,8 +108,6 @@
 //                     }} />
 //                 </div>
 //             </div>
-
-
 
 //             {/* Grid */}
 //             <div className="grid grid-cols-8 border-t border-l min-w-[1000px]">
@@ -217,7 +215,7 @@
 // components/Calendar.js
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import searchIcon from "../Assets/search-01.svg";
+
 import {
     startOfWeek,
     addDays,
@@ -230,8 +228,6 @@ import {
 import { getCalendarByDateRange } from '../api/quote';
 
 const hours = Array.from({ length: 11 }, (_, i) => 7 + i);
-
-
 
 const Calendar = () => {
     const navigate = useNavigate();
@@ -286,7 +282,6 @@ const Calendar = () => {
         sessionStorage.setItem('moveIdSub', moveId)
         navigate("/upcoming-jobs-view");
     };
-
 
     return (
         <div className="overflow-x-auto">
@@ -356,7 +351,7 @@ const Calendar = () => {
                         className="w-full sm:w-auto pl-10 pr-3 py-2 rounded text-sm border border-gray-300 bg-gray-100"
                     />
                     <img
-                        src={searchIcon}
+                        src="/assets/search-01.svg"
                         alt="Search Icon"
                         className="absolute top-1/2 left-3 transform -translate-y-1/2 w-4 h-4"
                     />

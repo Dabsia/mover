@@ -1,8 +1,7 @@
 import React from "react";
 import "./successModal.css"
-import sucessIcon from "../Assets/success-good-tick.svg"
-import { useNavigate } from "react-router-dom";
 
+import { useNavigate } from "react-router-dom";
 
 const SuccessMessageAdmin = () => {
     const navigate = useNavigate();
@@ -15,7 +14,7 @@ const SuccessMessageAdmin = () => {
             <div className="success_modal_container">
                 <div className="success_modal_upper">
                     <div>
-                        <img src={sucessIcon} alt="" />
+                        <img src="/assets/success-good-tick.svg" alt="" />
                     </div>
                     <div className="success_modal_upper_text">
                         <h2>Login Sucessful</h2>

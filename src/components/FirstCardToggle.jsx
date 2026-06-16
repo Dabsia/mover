@@ -1,21 +1,15 @@
 // import { useEffect } from "react";
 import React, { useEffect, useState } from "react";
 import RegisterProgress from "./RegisterProgessBar";
-import zinterLogo from "../Assets/logo.svg"
-import newZinterLogo from "../Assets/logo.svg"
-import newLogo from "../Assets/new-zinter-logo-only.svg"
-import trustedMovers from "../Assets/trusted_movers.svg"
-import bgImage1 from "../Assets/truck-login.svg"
-import bgImage2 from "../Assets/box-login.svg"
+
 import "./firstCardToggle.css"
 
 const FirstCardToggle = () => {
-    const [bgImage, setBgImage] = useState(bgImage1);
-
+    const [bgImage, setBgImage] = useState("/assets/residential-moving.svg");
 
     useEffect(() => {
         const interval = setInterval(() => {
-            setBgImage((prevBg) => (prevBg === bgImage1 ? bgImage2 : bgImage1));
+            setBgImage((prevBg) => (prevBg === "/assets/residential-moving.svg" ? "/assets/customize-moving.svg" : "/assets/residential-moving.svg"));
         }, 3000);
 
         return () => clearInterval(interval);
@@ -23,12 +17,12 @@ const FirstCardToggle = () => {
     return (
         <div className="container-img" style={{ backgroundImage: `url(${bgImage})`, transition: "background 1s ease-in-out" }}>
             <div className="container_logo_header">
-                <img src={newLogo} alt="" />
+                <img src="/assets/new-zinter-logo-only.svg" alt="" />
                 <span>Zinter</span>
             </div>
             <div className="our_network">
                 <div className="our_network_img">
-                    <img src={trustedMovers} alt="" />
+                    <img src="/assets/trusted_movers.svg" alt="" />
                 </div>
                 <div className="our_network_text">
                     <span>
@@ -40,7 +34,7 @@ const FirstCardToggle = () => {
             </div>
             <div className="container_progress_bar">
                 <span className="progress-bar"></span>
-                <span className="progress-bar-toggle" style={{ backgroundColor: bgImage === bgImage2 ? 'white' : 'transparent' }} ></span>
+                <span className="progress-bar-toggle" style={{ backgroundColor: bgImage === "/assets/customize-moving.svg" ? 'white' : 'transparent' }} ></span>
 
             </div>
             <div>

@@ -1,6 +1,5 @@
 import React from "react";
 import Logo from "./Logo";
-import miniLogo from "../Assets/Group 1.svg";
 
 const Invoice = () => {
   return (
@@ -65,7 +64,7 @@ const Invoice = () => {
           </div>
           <div className="flex items-center justify-between mt-2">
             <div className="flex">
-              <img src={miniLogo} alt="" />
+              <img src="/assets/Group 1.svg" alt="" />
               <p className="text-white ml-2 font-sora text-[12px]">
                 Thank you! — zinter.co
               </p>

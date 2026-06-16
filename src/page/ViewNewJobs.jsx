@@ -2,12 +2,10 @@ import React, { useEffect, useState } from "react";
 import "./viewNewJobs.css"
 import RichTextEditor from "../components/RichTextEditor";
 import ZinterHeaderPartner from "../components/ZinterHeaderPartner";
-import arrowBack from "../Assets/arrow-back-btn.svg"
-import dot from "../Assets/Dot.svg"
+
 // import movingFromIcon from "../Assets/point-a.svg"
 import MovementMap from "../components/GoogleMapMove";
-import displayPicture from "../Assets/avatar-icon.svg"
-import sofaIcon from "../Assets/sofa-03.svg"
+
 // import floorLampIcon from "../Assets/lamp.svg"
 // import clockIcon from "../Assets/vintage-clock.svg"
 // import tableIcon from "../Assets/table-01.svg"
@@ -23,19 +21,12 @@ import sofaIcon from "../Assets/sofa-03.svg"
 // import bookShelf from "../Assets/bookshelf-02.svg"
 // import monitorIcon from "../Assets/modern-tv.svg"
 // import chairIcon from "../Assets/chair-02.svg"
-import closeIcon from "../Assets/close-modal-icon.svg"
-import locationIcon from "../Assets/location-icon.svg"
-import destinationIcon from "../Assets/destination-icon.svg"
-import dropdown from "../Assets/arrow-down-dropdown.svg"
-import sucessIcon from "../Assets/success-good-tick.svg"
 
 import { useNavigate } from "react-router-dom";
 import { useMutation, useQuery } from "@tanstack/react-query";
 import { moveDetails } from "../api/moveDetails";
 import Loader from "../components/loader";
 import { createQuote } from "../api/quote";
-
-
 
 const ViewNewJobs = () => {
     const navigate = useNavigate()
@@ -111,8 +102,6 @@ const ViewNewJobs = () => {
         enabled: !!moveCode,
     });
 
-
-
     // useEffect(() => {
     //     if (data?.responseStatus === false && data?.result?.moveItemsDetails) {
     //         setMoveDetailsArray(data.result.moveItemsDetails);
@@ -176,7 +165,7 @@ const ViewNewJobs = () => {
     // };
     const handleClose = () => {
         // debugger
-        if ( !time) {
+        if (!time) {
             alert("Please select time");
             return;
         }
@@ -206,7 +195,7 @@ const ViewNewJobs = () => {
                 <div className="new_jobs_header">
                     <button onClick={handdleGoBack}>
                         <span>New Jobs</span>
-                        <img src="/images/arrow-back-btn.svg" alt="" />
+                        <img loading="lazy" src="/images/arrow-back-btn.svg" alt="" />
                     </button>
                     <span className="new_jobs_head_text">View Job Details</span>
                 </div>
@@ -214,15 +203,15 @@ const ViewNewJobs = () => {
                     <div>
                         <div className="header_job_details">
                             <div>
-                                {/* <img src="/images/avatar-icon.svg" alt="" /> */}
+                                {/* <img loading="lazy" src="/images/avatar-icon.svg" alt="" /> */}
                             </div>
                             <div className="header_job_details_user">
                                 <h2>{fullName}</h2>
                                 <div>
                                     <div className="header_job_detail_new">
                                         <span>
-                                            <img src="/images/Dot.svg" alt="" />
-                                            </span>
+                                            <img loading="lazy" src="/images/Dot.svg" alt="" />
+                                        </span>
                                         <span>New Request</span>
                                     </div>
                                     <span className="header_user_job_email">{email}</span>
@@ -231,14 +220,14 @@ const ViewNewJobs = () => {
                         </div>
                         <div className="location_job_details">
                             <div className="">
-                                {/* <img src={movingFromIcon} alt="" /> */}
+                                {/* <img loading="lazy" src={movingFromIcon} alt="" /> */}
                                 <div className="location_from">
                                     <span>Moving From</span>
                                     <span> {from}</span>
                                 </div>
                             </div>
                             <div>
-                                {/* <img src={movingFromIcon} alt="" /> */}
+                                {/* <img loading="lazy" src={movingFromIcon} alt="" /> */}
                                 <div className="location_from">
                                     <span>Moving To</span>
                                     <span>{to}</span>
@@ -315,23 +304,23 @@ const ViewNewJobs = () => {
                                             <div key={index} className="inventory_tab_job_body"  >
                                                 <div className="move_tab_details">
                                                     <span>{item}</span>
-                                                    {/* <span> <img src={sofaIcon} alt="" /> </span> */}
+                                                    {/* <span> <img loading="lazy" src="/assets/sofa-03.svg" alt="" /> </span> */}
                                                 </div>
                                                 <div className="move_tab_details">
                                                     {/* <span>{item}</span> */}
-                                                    {/* <span> <img src={floorLampIcon} alt="" /> </span> */}
+                                                    {/* <span> <img loading="lazy" src={floorLampIcon} alt="" /> </span> */}
                                                 </div>
                                                 <div className="move_tab_details">
                                                     {/* <span>Vintage Clock</span> */}
-                                                    {/* <span> <img src={clockIcon} alt="" /> </span> */}
+                                                    {/* <span> <img loading="lazy" src={clockIcon} alt="" /> </span> */}
                                                 </div>
                                                 <div className="move_tab_details">
                                                     {/* <span>Coffee Table</span> */}
-                                                    {/* <span> <img src={tableIcon} alt="" /> </span> */}
+                                                    {/* <span> <img loading="lazy" src={tableIcon} alt="" /> </span> */}
                                                 </div>
                                                 <div className="move_tab_details">
                                                     {/* <span>Pool Table</span> */}
-                                                    {/* <span> <img src={poolTable} alt="" /> </span> */}
+                                                    {/* <span> <img loading="lazy" src={poolTable} alt="" /> </span> */}
                                                 </div>
                                             </div>
                                         ))}
@@ -346,45 +335,45 @@ const ViewNewJobs = () => {
                                 <div className="inventory_tab_job_body">
                                     <div className="move_tab_details">
                                         <span>King Size Bed</span>
-                                        <span> <img src={kingSizeBed} alt="" /> </span>
+                                        <span> <img loading="lazy" src={kingSizeBed} alt="" /> </span>
                                     </div>
                                     <div className="move_tab_details">
                                         <span>Baby Bed</span>
-                                        <span> <img src={babyBedIcon} alt="" /> </span>
+                                        <span> <img loading="lazy" src={babyBedIcon} alt="" /> </span>
                                     </div>
                                     <div className="move_tab_details">
                                         <span>Lamp</span>
-                                        <span> <img src={floorLampIcon} alt="" /> </span>
+                                        <span> <img loading="lazy" src={floorLampIcon} alt="" /> </span>
                                     </div>
                                     <div className="move_tab_details">
                                         <span>Curtains</span>
-                                        <span> <img src={curtains} alt="" /> </span>
+                                        <span> <img loading="lazy" src={curtains} alt="" /> </span>
                                     </div>
                                     <div className="move_tab_details">
                                         <span>Book Shelf</span>
-                                        <span> <img src={bookShelf} alt="" /> </span>
+                                        <span> <img loading="lazy" src={bookShelf} alt="" /> </span>
                                     </div>
                                 </div>
                                 <div className="inventory_tab_job_body">
                                     <div className="move_tab_details">
                                         <span>Dell Monitor</span>
-                                        <span> <img src={monitorIcon} alt="" /> </span>
+                                        <span> <img loading="lazy" src={monitorIcon} alt="" /> </span>
                                     </div>
                                     <div className="move_tab_details">
                                         <span>Work Chair</span>
-                                        <span> <img src={chairIcon} alt="" /> </span>
+                                        <span> <img loading="lazy" src={chairIcon} alt="" /> </span>
                                     </div>
                                     <div className="move_tab_details">
                                         <span>FLower Vase</span>
-                                        <span> <img src={indoorPlant} alt="" /> </span>
+                                        <span> <img loading="lazy" src={indoorPlant} alt="" /> </span>
                                     </div>
                                     <div className="move_tab_details">
                                         <span>Magazine Rack</span>
-                                        <span> <img src={magazineRack} alt="" /> </span>
+                                        <span> <img loading="lazy" src={magazineRack} alt="" /> </span>
                                     </div>
                                     <div className="move_tab_details">
                                         <span>Indoor Plants</span>
-                                        <span> <img src={indoorPlant} alt="" /> </span>
+                                        <span> <img loading="lazy" src={indoorPlant} alt="" /> </span>
                                     </div>
                                 </div>
                             </div> */}
@@ -450,18 +439,18 @@ const ViewNewJobs = () => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td> <img src="" alt="" /></td>
-                                        <td> <img src="" alt="" /> </td>
-                                        <td><img src="" alt="" /></td>
-                                        <td><img src="" alt="" /></td>
-                                        <td><img src="" alt="" /></td>
+                                        <td> <img loading="lazy" src="" alt="" /></td>
+                                        <td> <img loading="lazy" src="" alt="" /> </td>
+                                        <td><img loading="lazy" src="" alt="" /></td>
+                                        <td><img loading="lazy" src="" alt="" /></td>
+                                        <td><img loading="lazy" src="" alt="" /></td>
                                     </tr>
                                     <tr>
-                                        <td><img src="" alt="" /></td>
-                                        <td> <img src="" alt="" /> </td>
-                                        <td><img src="" alt="" />  </td>
-                                        <td><img src="" alt="" />  </td>
-                                        <td><img src="" alt="" />  </td>
+                                        <td><img loading="lazy" src="" alt="" /></td>
+                                        <td> <img loading="lazy" src="" alt="" /> </td>
+                                        <td><img loading="lazy" src="" alt="" />  </td>
+                                        <td><img loading="lazy" src="" alt="" />  </td>
+                                        <td><img loading="lazy" src="" alt="" />  </td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -485,18 +474,18 @@ const ViewNewJobs = () => {
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td> <img src="" alt="" /></td>
-                                        <td> <img src="" alt="" /> </td>
-                                        <td><img src="" alt="" /></td>
-                                        <td><img src="" alt="" /></td>
-                                        <td><img src="" alt="" /></td>
+                                        <td> <img loading="lazy" src="" alt="" /></td>
+                                        <td> <img loading="lazy" src="" alt="" /> </td>
+                                        <td><img loading="lazy" src="" alt="" /></td>
+                                        <td><img loading="lazy" src="" alt="" /></td>
+                                        <td><img loading="lazy" src="" alt="" /></td>
                                     </tr>
                                     <tr>
-                                        <td><img src="" alt="" /></td>
-                                        <td> <img src="" alt="" /> </td>
-                                        <td><img src="" alt="" />  </td>
-                                        <td><img src="" alt="" />  </td>
-                                        <td><img src="" alt="" />  </td>
+                                        <td><img loading="lazy" src="" alt="" /></td>
+                                        <td> <img loading="lazy" src="" alt="" /> </td>
+                                        <td><img loading="lazy" src="" alt="" />  </td>
+                                        <td><img loading="lazy" src="" alt="" />  </td>
+                                        <td><img loading="lazy" src="" alt="" />  </td>
                                     </tr>
                                 </tbody>
                             </table> */}
@@ -512,16 +501,15 @@ const ViewNewJobs = () => {
                 <div className="provide_quote_container">
                     <div className="provide_quote_body">
                         <div className="header_quote">
-                            <img onClick={handleAllClose} src="/images/close-modal-icon.svg" alt="" />
+                            <img loading="lazy" onClick={handleAllClose} src="/images/close-modal-icon.svg" alt="" />
                             <span>Provide Quote</span>
                         </div>
                         <div className="body_quote_container">
 
-
                             <div className="body_quote">
                                 <div className="body_quote_first">
                                     <div>
-                                        {/* <img src="/images/arrow-down-dropdown.svg" alt="" /> */}
+                                        {/* <img loading="lazy" src="/images/arrow-down-dropdown.svg" alt="" /> */}
                                     </div>
                                     <div className="body_quote_details">
                                         <h2>{fullName}</h2>
@@ -534,11 +522,11 @@ const ViewNewJobs = () => {
                                 <div className="body_quote_location_items">
                                     <div className="body_quote_location">
                                         <div className="body_quote_start">
-                                            <img src="/images/location-icon.svg" alt="" />
+                                            <img loading="lazy" src="/images/location-icon.svg" alt="" />
                                             <span>{from}</span>
                                         </div>
                                         <div className="body_quote_start">
-                                            <img src="/images/destination-icon.svg" alt="" />
+                                            <img loading="lazy" src="/images/destination-icon.svg" alt="" />
                                             <span>{to}</span>
                                         </div>
                                     </div>
@@ -570,7 +558,7 @@ const ViewNewJobs = () => {
                                     
                                     </div>
 
-                                    <img className="img_view" src={dropdown} alt="" onFocus={() => setShowDropdown(true)} />
+                                    <img loading="lazy" className="img_view" src="/assets/arrow-down-dropdown.svg" alt="" onFocus={() => setShowDropdown(true)} />
 
                                     {showDropdown && (
                                         <div className="dropdown_list_view">
@@ -617,14 +605,14 @@ const ViewNewJobs = () => {
                         <div className="body_quote_container">
 
                             <div className="success_quote">
-                                <img src="/images/success-good-tick.svg" alt="" />
+                                <img loading="lazy" src="/images/success-good-tick.svg" alt="" />
                                 <h1>Quote successfully provided</h1>
                                 <span>A notification will be sent to the customer’s email to make payment</span>
                             </div>
                             <div className="body_quote">
                                 <div className="body_quote_first">
                                     <div>
-                                       
+
                                     </div>
                                     <div className="body_quote_details">
                                         <h2>{fullName}</h2>
@@ -637,11 +625,11 @@ const ViewNewJobs = () => {
                                 <div className="body_quote_location_items">
                                     <div className="body_quote_location">
                                         <div className="body_quote_start">
-                                            <img src={locationIcon} alt="" />
+                                            <img loading="lazy" src="/assets/location-icon.svg" alt="" />
                                             <span>{from}</span>
                                         </div>
                                         <div className="body_quote_start">
-                                            <img src={destinationIcon} alt="" />
+                                            <img loading="lazy" src="/assets/destination-icon.svg" alt="" />
                                             <span>{to}</span>
                                         </div>
                                     </div>

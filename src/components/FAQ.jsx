@@ -1,4 +1,4 @@
-import question from "../Assets/question.svg";
+
 import React, { useState } from "react";
 import { Minus, Plus } from "lucide-react";
 import { useTranslation } from "react-i18next";
@@ -61,7 +61,7 @@ const FAQ = ({ showBackgroundColor }) => {
                 {t("faq.title")}
               </h2>
             </div>
-            <img src={question} className="w-[70px] h-[90px] " alt="question" />
+            <img src="/assets/question.svg" className="w-[70px] h-[90px] " alt="question" />
           </div>
 
           {/* FAQ Items Full Width */}
@@ -119,7 +119,7 @@ const FAQ = ({ showBackgroundColor }) => {
               {t("faq.title")}
             </h2>
             <img
-              src={question}
+              src="/assets/question.svg"
               className="w-[250px] h-[300px] "
               alt="question"
             />

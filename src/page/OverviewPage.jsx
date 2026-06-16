@@ -1,32 +1,7 @@
 import React, { useEffect, useState } from "react";
-// import OSMMap from "../components/OsMap";
-// import JobsPage from "./JobsPage";
 import SideBar from "../components/SideBar";
-import movingForwardIcon from "../Assets/Grade Icon.svg"
-import notificationBell from "../Assets/Email-verification-icon.svg"
-import userIcon from "../Assets/users-icon.svg"
-import viewJobs from "../Assets/View Arrow.svg"
-import approvedRequestIcon from "../Assets/approved-request-icon.svg"
-import paymentMadeIcon from "../Assets/payment-made-icon.svg"
-import upcomingIcon from "../Assets/upcoming-event-icon.svg"
-import inTransit from "../Assets/in-transit-icon.svg"
-import completedIcon from "../Assets/completed-icon.svg"
-import cancalledIcon from "../Assets/cancelled-icon.svg"
-import completedSignal from "../Assets/completed-signal.svg"
-import cancelledSignal from "../Assets/cancelled-signal.svg"
-import searchIcon from "../Assets/search-01.svg"
-import filterIcon from "../Assets/filter-horizontal.svg"
-import refreshIcon from "../Assets/refresh (1).svg"
-import arrowDown from "../Assets/arrow-down-02.svg"
-import avatar from "../Assets/Gb-Avatar.svg"
-import dot from "../Assets/Dot.svg"
-import viewMore from "../Assets/Eye.svg"
 import "./overviewPage.css"
 import ViewLocationMap from "../components/GoogleMap";
-// import revenueIcon from "../Assets/dashboard-revenue-logo.svg";
-// import addServiceIcon from "../Assets/add-service.svg"
-// import configureIcon from "../Assets/configure-icon.svg"
-// import settingsIcon from "../Assets/settings.svg"
 import { useQuery } from "@tanstack/react-query";
 import { moversDashboardAnalytics } from "../api/agentApi";
 import Loader from "../components/loader";
@@ -78,9 +53,9 @@ const OverviewPage = () => {
                         <div className="moving_truck">
                             <div className="notification_user">
                                 {/* <img src={notificationBell} alt="" /> */}
-                                <img src="/images/Email-verification-icon.svg" alt="" />
+                                <img src="/images/Email-verification-icon.svg" loading="lazy" alt="" />
                                 {/* <img src={userIcon} alt="" /> */}
-                                <img src="/images/users-icon.svg" alt="" />
+                                <img src="/images/users-icon.svg" loading="lazy" alt="" />
                             </div>
 
 
@@ -96,7 +71,7 @@ const OverviewPage = () => {
                                 </div>
                                 <div>
                                     {/* <img src={viewJobs} alt="" /> */}
-                                    <img src="/images/View Arrow.svg" alt="" />
+                                    <img loading="lazy" src="/images/View Arrow.svg" alt="" />
 
                                 </div>
                             </div>
@@ -107,7 +82,7 @@ const OverviewPage = () => {
                             <div className="revenue_container">
                                 <div>
                                     {/* <img src={revenueIcon} alt="" /> */}
-                                    <img src="/images/dashboard-revenue-logo.svg" alt="" />
+                                    <img loading="lazy" src="/images/dashboard-revenue-logo.svg" alt="" />
                                 </div>
                                 <div className="revenue_text">
                                     <span>Total Revenue</span>
@@ -121,15 +96,15 @@ const OverviewPage = () => {
                         </div>
                         <div className="map_btn">
                             <button>
-                                {/* <img src={addServiceIcon} alt="" /> */}
+                                {/* <img loading="lazy" src={addServiceIcon} alt="" /> */}
                                 <span>Add Your Services</span>
                             </button>
                             <button>
-                                {/* <img src={configureIcon} alt="" /> */}
+                                {/* <img loading="lazy" src={configureIcon} alt="" /> */}
                                 <span>Configure Pricing</span>
                             </button>
                             <button>
-                                {/* <img src={settingsIcon} alt="" /> */}
+                                {/* <img loading="lazy" src={settingsIcon} alt="" /> */}
                                 <span>Account Settings</span>
                             </button>
                         </div>
@@ -138,14 +113,14 @@ const OverviewPage = () => {
                 <div className="calendar_container">
                     <div className="first_step">
                         <div className="first_step_arrow">
-                            {/* <img src={movingForwardIcon} alt="" /> */}
-                            <img src="/images/Grade Icon.svg" alt="" />
+                            {/* <img loading="lazy" src={movingForwardIcon} alt="" /> */}
+                            <img loading="lazy" src="/images/Grade Icon.svg" alt="" />
                             {/* <span>--------------</span> */}
                         </div>
                         <div className="approved_number_text_container">
                             <div className="approved_icon">
-                                {/* <img src={approvedRequestIcon} alt="" /> */}
-                                <img src="/images/approved-request-icon.svg" alt="" />
+                                {/* <img loading="lazy" src={approvedRequestIcon} alt="" /> */}
+                                <img loading="lazy" src="/images/approved-request-icon.svg" alt="" />
                             </div>
                             <div className="approved_number_text">
                                 <span>Approved Requests</span>
@@ -155,14 +130,14 @@ const OverviewPage = () => {
                     </div>
                     <div className="first_step">
                         <div className="first_step_arrow">
-                            <img src="/images/Grade Icon.svg" alt="" />
-                            {/* <img src={movingForwardIcon} alt="" /> */}
+                            <img loading="lazy" src="/images/Grade Icon.svg" alt="" />
+                            {/* <img loading="lazy" src={movingForwardIcon} alt="" /> */}
                             {/* <span>-----------</span> */}
                         </div>
                         <div className="approved_number_text_container">
                             <div className="approved_icon">
-                                {/* <img src={paymentMadeIcon} alt="" /> */}
-                                <img src="/images/payment-made-icon.svg" alt="" />
+                                {/* <img loading="lazy" src={paymentMadeIcon} alt="" /> */}
+                                <img loading="lazy" src="/images/payment-made-icon.svg" alt="" />
                             </div>
                             <div className="approved_number_text">
                                 <span>Payments Made</span>
@@ -172,12 +147,12 @@ const OverviewPage = () => {
                     </div>
                     <div className="first_step">
                         <div className="first_step_arrow">
-                            <img src="/images/Grade Icon.svg" alt="" />
+                            <img loading="lazy" src="/images/Grade Icon.svg" alt="" />
                         </div>
                         <div className="approved_number_text_container">
                             <div className="approved_icon">
-                                {/* <img src={upcomingIcon} alt="" /> */}
-                                <img src="upcoming-event-icon.svg" alt="" />
+                                {/* <img loading="lazy" src={upcomingIcon} alt="" /> */}
+                                <img loading="lazy" src="upcoming-event-icon.svg" alt="" />
                             </div>
                             <div className="approved_number_text">
                                 <span>Upcoming Pickups</span>
@@ -187,14 +162,14 @@ const OverviewPage = () => {
                     </div>
                     <div className="first_step">
                         <div className="first_step_arrow">
-                            <img src="/images/Grade Icon.svg" alt="" />
-                            {/* <img src={movingForwardIcon} alt="" /> */}
+                            <img loading="lazy" src="/images/Grade Icon.svg" alt="" />
+                            {/* <img loading="lazy" src={movingForwardIcon} alt="" /> */}
                             {/* <span>---------</span> */}
                         </div>
                         <div className="approved_number_text_container">
                             <div className="approved_icon">
-                                {/* <img src={inTransit} alt="" /> */}
-                                <img src="/images/in-transit-icon.svg" alt="" />
+                                {/* <img loading="lazy" src={inTransit} alt="" /> */}
+                                <img loading="lazy" src="/images/in-transit-icon.svg" alt="" />
                             </div>
                             <div className="approved_number_text">
                                 <span>In Transit</span>
@@ -204,14 +179,14 @@ const OverviewPage = () => {
                     </div>
                     <div className="first_step">
                         <div className="first_step_arrow">
-                            {/* <img src={completedSignal} alt="" /> */}
-                            <img src="/images/completed-signal.svg" alt="" />
+                            {/* <img loading="lazy" src={completedSignal} alt="" /> */}
+                            <img loading="lazy" src="/images/completed-signal.svg" alt="" />
 
                         </div>
                         <div className="approved_number_text_container">
                             <div className="approved_icon">
-                                {/* <img src={completedIcon} alt="" /> */}
-                                <img src="/images/completed-icon.svg" alt="" />
+                                {/* <img loading="lazy" src={completedIcon} alt="" /> */}
+                                <img loading="lazy" src="/images/completed-icon.svg" alt="" />
                             </div>
                             <div className="approved_number_text">
                                 <span>Completed Moves</span>
@@ -221,13 +196,13 @@ const OverviewPage = () => {
                     </div>
                     <div className="first_step">
                         <div className="first_step_arrow">
-                            {/* <img src={cancelledSignal} alt="" /> */}
-                            <img src="/images/cancelled-signal.svg" alt="" />
+                            {/* <img loading="lazy" src={cancelledSignal} alt="" /> */}
+                            <img loading="lazy" src="/images/cancelled-signal.svg" alt="" />
                         </div>
                         <div className="approved_number_text_container">
                             <div className="approved_icon"  >
-                                <img src="/images/cancelled-icon.svg" alt="" />
-                                {/* <img src={cancalledIcon} alt="" /> */}
+                                <img loading="lazy" src="/images/cancelled-icon.svg" alt="" />
+                                {/* <img loading="lazy" src={cancalledIcon} alt="" /> */}
                             </div>
                             <div className="approved_number_text">
                                 <span>Cancelled Moves</span>
@@ -245,25 +220,25 @@ const OverviewPage = () => {
                                     <th>
                                         <div>
                                             <span>Name</span>
-                                            <img src={arrowDown} alt="" />
+                                            <img loading="lazy" src={arrowDown} alt="" />
                                         </div>
                                     </th>
                                     <th>
                                         <div>
                                             <span>Move Summary</span>
-                                            <img src={arrowDown} alt="" />
+                                            <img loading="lazy" src={arrowDown} alt="" />
                                         </div>
                                     </th>
                                     <th>
                                         <div>
                                             <span>Status</span>
-                                            <img src={arrowDown} alt="" />
+                                            <img loading="lazy" src={arrowDown} alt="" />
                                         </div>
                                     </th>
                                     <th>
                                         <div>
                                             <span>Progress</span>
-                                            <img src={arrowDown} alt="" />
+                                            <img loading="lazy" src={arrowDown} alt="" />
                                         </div>
                                     </th>
                                     <th>
@@ -279,7 +254,7 @@ const OverviewPage = () => {
                                     <tr key={index}>
                                         <td>
                                             <div className="name_td td">
-                                                <div><img src={avatar} alt="user-initials" /></div>
+                                                <div><img loading="lazy" src={avatar} alt="user-initials" /></div>
                                                 <div className="name_text">
                                                     <span>{request.name}</span>
                                                     <span>{request.email}</span>
@@ -294,7 +269,7 @@ const OverviewPage = () => {
                                         </td>
                                         <td>
                                             <div className="status td">
-                                                <span><img src={dot} alt="" /></span>
+                                                <span><img loading="lazy" src={dot} alt="" /></span>
                                                 <span>{request.status}</span>
                                             </div>
                                         </td>

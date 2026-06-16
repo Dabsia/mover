@@ -1,12 +1,6 @@
 import React from "react";
 import "./paymentPage.css"
 import SideBar from "../components/SideBar";
-import searchIcon from "../Assets/search-01.svg"
-import filterIcon from "../Assets/filter-horizontal.svg"
-import refreshIcon from "../Assets/refresh (1).svg"
-import arrowDown from "../Assets/arrow-down-02.svg"
-import viewMore from "../Assets/Eye.svg"
-import dot from "../Assets/Dot.svg"
 
 const Payment = () => {
     const provincesData = [
@@ -99,14 +93,14 @@ const Payment = () => {
                         <div className="right_table_head">
                             <div className="search_icon">
                                 <input type="text" placeholder="Search" />
-                                <img src={searchIcon} alt="" />
+                                <img src="/assets/search-01.svg" alt="" />
                             </div>
                             <div className="filter_con">
-                                <img src={filterIcon} alt="" />
+                                <img src="/assets/filter-horizontal.svg" alt="" />
                                 <span>Filter</span>
                             </div>
                             <div className="refresh">
-                                <img src={refreshIcon} alt="" />
+                                <img src="/assets/refresh (1).svg" alt="" />
                             </div>
                         </div>
                     </div>
@@ -117,25 +111,25 @@ const Payment = () => {
                                     <th>
                                         <div>
                                             <span>Amount</span>
-                                            <img src={arrowDown} alt="" />
+                                            <img src="/assets/arrow-down-02.svg" alt="" />
                                         </div>
                                     </th>
                                     <th>
                                         <div>
                                             <span>Move Summary</span>
-                                            <img src={arrowDown} alt="" />
+                                            <img src="/assets/arrow-down-02.svg" alt="" />
                                         </div>
                                     </th>
                                     <th>
                                         <div>
                                             <span>Status</span>
-                                            <img src={arrowDown} alt="" />
+                                            <img src="/assets/arrow-down-02.svg" alt="" />
                                         </div>
                                     </th>
                                     <th>
                                         <div>
                                             <span>Date & Time</span>
-                                            <img src={arrowDown} alt="" />
+                                            <img src="/assets/arrow-down-02.svg" alt="" />
                                         </div>
                                     </th>
                                     <th></th>
@@ -159,7 +153,7 @@ const Payment = () => {
                                         <td className="td_payment_table">
                                             <div className="status td">
                                                 <span>
-                                                    <img src={dot} alt="" />
+                                                    <img src="/assets/Dot.svg" alt="" />
                                                 </span>
                                                 <span>Successful</span>
                                             </div>
@@ -168,7 +162,7 @@ const Payment = () => {
                                             <span>{move.date}</span>
                                         </td>
                                         <td className="view td_payment_table">
-                                            <img src={viewMore} alt="view more" />
+                                            <img src="/assets/Eye.svg" alt="view more" />
                                         </td>
                                     </tr>
                                 ))}
@@ -180,6 +174,5 @@ const Payment = () => {
         </div>
     )
 }
-
 
 export default Payment

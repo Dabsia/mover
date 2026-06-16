@@ -1,19 +1,15 @@
 import { React, useEffect } from "react";
 import { useNavigate } from "react-router-dom"; // Import useNavigate
 import FirstCardToggle from "../components/FirstCardToggle";
-import stepperIcon from "../Assets/Progress minimal icons connected.svg"
-import mobileStepperIcon from "../Assets/mobile-stepper-icon.svg"
+
 import "./firstStepCompanies.css";
 import { useState } from "react";
-import goodTick from "../Assets/tick-01.svg"
-import companyImage from "../Assets/Content.svg"
+
 import { useQuery } from "@tanstack/react-query";
 import Loader from "../components/loader";
 import { getCompanyDetailsByNumber } from "../api/agentApi";
 
 const FirstStepCompanies = () => {
-
-
 
     const [regNumber, setRegNumber] = useState("");
     const [companyName, setCompanyName] = useState("")
@@ -56,7 +52,6 @@ const FirstStepCompanies = () => {
                 setRegistrationDate(data.result.registerationDate)
                 setAddress(data.result.address)
 
-
             }
         }
     }, [data]);
@@ -75,7 +70,6 @@ const FirstStepCompanies = () => {
 
     //     }
     //   }, [data]);
-
 
     const navigate = useNavigate();
 
@@ -117,7 +111,6 @@ const FirstStepCompanies = () => {
             navigate("/email-verification");
         }
 
-
     };
 
     const handleLogin = () => {
@@ -132,7 +125,6 @@ const FirstStepCompanies = () => {
         window.open("/terms", "_blank");
     };
 
-
     return (
         <div className="container_firstStep">
             <div className="card_toggle">
@@ -140,10 +132,10 @@ const FirstStepCompanies = () => {
             </div>
             <div className="first_company_card">
                 <div className="stepper_icon">
-                    {/* <img className="mobile_only_stepper_icon" src={mobileStepperIcon} alt="" /> */}
-                    <img className="mobile_only_stepper_icon" src="/images/mobile-stepper-icon.svg" alt="" />
-                    {/* <img className="laptop_only_stepper_icon" src={stepperIcon} alt="" /> */}
-                    <img className="laptop_only_stepper_icon" src="/images/Progress minimal icons connected.svg" alt="" />
+                    {/* <img className="mobile_only_stepper_icon" src="/assets/mobile-stepper-icon.svg" alt="" /> */}
+                    <img loading="lazy" className="mobile_only_stepper_icon" src="/images/mobile-stepper-icon.svg" alt="" />
+                    {/* <img className="laptop_only_stepper_icon" src="/assets/Progress minimal icons connected.svg" alt="" /> */}
+                    <img loading="lazy" className="laptop_only_stepper_icon" src="/images/Progress minimal icons connected.svg" alt="" />
                 </div>
                 <div className="company_header">
                     <h1>Company Information</h1>
@@ -184,7 +176,7 @@ const FirstStepCompanies = () => {
                         <div className="first_card_good_tick" >
                             <div>
                                 <img src="/images/Content.svg" alt="" />
-                                {/* <img src={companyImage} alt="" /> */}
+                                {/* <img src="/assets/Content.svg" alt="" /> */}
                             </div>
                             <div className="movers_details">
                                 <div className="movers_details_text"> {companyName} </div>

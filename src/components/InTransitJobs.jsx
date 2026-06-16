@@ -1,26 +1,4 @@
 import React, { useEffect, useState } from "react";
-// import OSMMap from "../components/OsMap";
-// import JobsPage from "./JobsPage";
-// import SideBar from "../components/SideBar";
-// import movingForwardIcon from "../Assets/Grade Icon.svg"
-// import notificationBell from "../Assets/Email-verification-icon.svg"
-// import userIcon from "../Assets/users-icon.svg"
-// import viewJobs from "../Assets/View Arrow.svg"
-// import approvedRequestIcon from "../Assets/approved-request-icon.svg"
-// import paymentMadeIcon from "../Assets/payment-made-icon.svg"
-// import upcomingIcon from "../Assets/upcoming-event-icon.svg"
-// import inTransit from "../Assets/in-transit-icon.svg"
-// import completedIcon from "../Assets/completed-icon.svg"
-// import cancalledIcon from "../Assets/cancelled-icon.svg"
-// import completedSignal from "../Assets/completed-signal.svg"
-// import cancelledSignal from "../Assets/cancelled-signal.svg"
-import searchIcon from "../Assets/search-01.svg"
-import filterIcon from "../Assets/filter-horizontal.svg"
-import refreshIcon from "../Assets/refresh (1).svg"
-import arrowDown from "../Assets/arrow-down-02.svg"
-import avatar from "../Assets/Gb-Avatar.svg"
-import dot from "../Assets/intransit_dot.svg"
-import viewMore from "../Assets/Eye.svg"
 import "./inTransitJobs.css"
 import { useNavigate } from "react-router-dom";
 import { useQuery } from "@tanstack/react-query";
@@ -145,19 +123,19 @@ const InTransitJobs = () => {
                     <div className="right_table_head">
                         <div className="search_icon">
                             <input type="text" placeholder="Search" />
-                            {/* <img src={searchIcon} alt="" /> */}
-                            <img src="/images/search-01.svg" alt="" />
+                            {/* <img loading="lazy" src={searchIcon} alt="" /> */}
+                            <img loading="lazy" src="/images/search-01.svg" alt="" />
                         </div>
                         <div className="filter_con">
                             <span>
-                                {/* <img src={filterIcon} alt="" /> */}
-                                <img src="/images/filter-horizontal.svg" alt="" />
+                                {/* <img loading="lazy" src={filterIcon} alt="" /> */}
+                                <img loading="lazy" src="/images/filter-horizontal.svg" alt="" />
                             </span>
                             <span>Filter</span>
                         </div>
                         <div className="refresh">
-                            {/* <img src={refreshIcon} alt="" /> */}
-                            <img src="/images/refresh (1).svg" alt="" />
+                            {/* <img loading="lazy" src={refreshIcon} alt="" /> */}
+                            <img loading="lazy" src="/images/refresh (1).svg" alt="" />
                         </div>
                     </div>
                 </div>
@@ -168,29 +146,29 @@ const InTransitJobs = () => {
                                 <th>
                                     <div>
                                         <span>Name</span>
-                                        <img src="/images/arrow-down-02.svg" alt="" />
-                                        {/* <img src={arrowDown} alt="" /> */}
+                                        <img loading="lazy" src="/images/arrow-down-02.svg" alt="" />
+                                        {/* <img loading="lazy" src={arrowDown} alt="" /> */}
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Move Summary</span>
-                                        <img src="/images/arrow-down-02.svg" alt="" />
-                                        {/* <img src={arrowDown} alt="" /> */}
+                                        <img loading="lazy" src="/images/arrow-down-02.svg" alt="" />
+                                        {/* <img loading="lazy" src={arrowDown} alt="" /> */}
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Status</span>
-                                        <img src="/images/arrow-down-02.svg" alt="" />
-                                        {/* <img src={arrowDown} alt="" /> */}
+                                        <img loading="lazy" src="/images/arrow-down-02.svg" alt="" />
+                                        {/* <img loading="lazy" src={arrowDown} alt="" /> */}
                                     </div>
                                 </th>
                                 <th>
                                     <div>
                                         <span>Progress</span>
-                                        <img src="/images/arrow-down-02.svg" alt="" />
-                                        {/* <img src={arrowDown} alt="" /> */}
+                                        <img loading="lazy" src="/images/arrow-down-02.svg" alt="" />
+                                        {/* <img loading="lazy" src={arrowDown} alt="" /> */}
                                     </div>
                                 </th>
                                 <th>
@@ -221,7 +199,7 @@ const InTransitJobs = () => {
                                     </td>
                                     <td>
                                         <div className="status_transit td">
-                                            <span><img src={dot} alt="" /></span>
+                                            <span><img loading="lazy" src={dot} alt="" /></span>
                                             <span>In Transit</span>
                                         </div>
                                     </td>
@@ -231,7 +209,7 @@ const InTransitJobs = () => {
                                         </div>
                                     </td>
                                     <td className="view">
-                                        <img src={viewMore} alt="view more" />
+                                        <img loading="lazy" src={viewMore} alt="view more" />
                                     </td>
                                 </tr>
                             ))} */}
@@ -294,7 +272,7 @@ const InTransitJobs = () => {
                                     <td>
                                         <div className="name_td td">
                                             <div>
-                                                <img src="/images/Gb-Avatar.svg" alt="" />
+                                                <img loading="lazy" src="/images/Gb-Avatar.svg" alt="" />
                                             </div>
                                             <div className="name_text">
                                                 <span>{job.fullName}</span>
@@ -311,8 +289,8 @@ const InTransitJobs = () => {
                                     <td>
                                         <div className="status_transit td">
                                             <span>
-                                                <img src="/images/intransit_dot.svg" alt="" />
-                                                {/* <img src={dot} alt="" /> */}
+                                                <img loading="lazy" src="/images/intransit_dot.svg" alt="" />
+                                                {/* <img loading="lazy" src={dot} alt="" /> */}
                                             </span>
                                             <span>In Transit</span>
                                         </div>
@@ -323,8 +301,8 @@ const InTransitJobs = () => {
                                         </div>
                                     </td>
                                     <td className="view" onClick={() => handleViewMore(job.moveCode, job.moveId)}>
-                                        {/* <img src={viewMore} alt="view more" /> */}
-                                        <img src="/images/Eye.svg" alt="" />
+                                        {/* <img loading="lazy" src={viewMore} alt="view more" /> */}
+                                        <img loading="lazy" src="/images/Eye.svg" alt="" />
                                     </td>
                                 </tr>
                             ))}
