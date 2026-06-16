@@ -66,7 +66,6 @@ function App() {
         <Route path="/transactions" element={<Transactions />} />
         <Route path="/resolution" element={<Resolution />} />
         <Route path="/stripe" element={<Stripe />} />
-        {/* Sidebar should only be visible on Overview & Calendar */}
       </Routes>
     </div>
   );
