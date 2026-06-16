@@ -1,121 +1,228 @@
 /* Add this */
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* for Internet Explorer and Edge */
-  scrollbar-width: none;     /* for Firefox */
+  -ms-overflow-style: none;
+  /* for Internet Explorer and Edge */
+  scrollbar-width: none;
+  /* for Firefox */
 }
 
 .scrollbar-hide::-webkit-scrollbar {
-  display: none;             /* for Chrome, Safari, and Opera */
+  display: none;
+  /* for Chrome, Safari, and Opera */
 }
 
-.fromLocationText{
-    width: 350px;
-  }
+.fromLocationText {
+  width: 350px;
+}
 
-  /* .app-container {
+/* .app-container {
     margin: 300px;
   } */
+/* Location Map Styles - Minimal CSS for Leaflet overrides */
 
-@media screen and (max-width:1400px){
-.moveDetailsDesc{
-  width: 70%;
+/* Leaflet container styling */
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, sans-serif;
 }
+
+/* Custom marker hover effect */
+.custom-div-icon {
+  transition: transform 0.2s ease-in-out;
 }
+
+.custom-div-icon:hover {
+  transform: scale(1.1);
+}
+
+/* Leaflet popup styling with Tailwind-compatible overrides */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  font-size: 13px !important;
+  line-height: 1.4 !important;
+  min-width: 120px !important;
+  padding: 8px 12px !important;
+}
+
+/* Zoom control styling */
+.leaflet-control-zoom {
+  border: none !important;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15) !important;
+}
+
+.leaflet-control-zoom a {
+  background: white !important;
+  color: #374151 !important;
+  border: none !important;
+  width: 32px !important;
+  height: 32px !important;
+  line-height: 32px !important;
+  font-size: 18px !important;
+}
+
+.leaflet-control-zoom a:hover {
+  background: #f3f4f6 !important;
+}
+
+.leaflet-control-zoom a:first-child {
+  border-radius: 4px 4px 0 0 !important;
+}
+
+.leaflet-control-zoom a:last-child {
+  border-radius: 0 0 4px 4px !important;
+}
+
+/* Disable text selection on map controls */
+.leaflet-control {
+  user-select: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .leaflet-container {
+    height: 300px !important;
+  }
+}
+
+/* Loading animation (optional) */
+.map-loading {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@media screen and (max-width:1400px) {
+  .moveDetailsDesc {
+    width: 70%;
+  }
+}
+
 @media screen and (max-width: 1380px) {
-  .heroDesc{
+  .heroDesc {
     width: 80%;
     line-height: 25.6px;
   }
 }
 
 @media screen and (max-width: 1330px) {
-  .heroLeft{
+  .heroLeft {
     width: 50%;
   }
 }
 
 @media screen and (max-width: 1255px) {
-  .moversBtnContainer{
+  .moversBtnContainer {
     width: 20%;
   }
-  .moversBtn{
+
+  .moversBtn {
     font-size: 14px;
   }
 }
 
 @media screen and (max-width: 1220px) {
-  .heroSection{
+  .heroSection {
     flex-direction: column;
   }
-  .heroLeft{
+
+  .heroLeft {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     width: 100%;
   }
-  .heroText{
+
+  .heroText {
     text-align: center;
     width: 100%;
   }
-  .heroDesc{
+
+  .heroDesc {
     text-align: center;
     width: 100%;
   }
-  .heroRight{
+
+  .heroRight {
     width: 100%;
     margin-top: 3rem;
   }
-  .zoomingCard{
+
+  .zoomingCard {
     width: 100%;
     height: 600px;
     object-fit: scale-down;
   }
-  .smallLocationCard{
+
+  .smallLocationCard {
     left: 20px;
   }
-  .zoomcardTextBox{
+
+  .zoomcardTextBox {
     width: fit-content;
     padding-right: 1rem;
   }
 }
 
-@media screen and (max-width:1213px){
-.moveDetailsDesc{
-  width: 80%;
-}
+@media screen and (max-width:1213px) {
+  .moveDetailsDesc {
+    width: 80%;
+  }
 }
 
 @media screen and (max-width: 1132px) {
-  .sellingCardText{
+  .sellingCardText {
     font-size: 16px;
   }
-  .processSection{
+
+  .processSection {
     flex-direction: column;
   }
-  .processLeft{
+
+  .processLeft {
     width: 100%;
     order: 2;
   }
-  .processRight{
+
+  .processRight {
     width: 100%;
     order: 1;
     margin-bottom: 2rem;
   }
-  .womanHighlight{
+
+  .womanHighlight {
     left: -30px;
   }
 }
 
-@media screen and (max-width: 1200px){
-  .locationDetailsContainer{
+@media screen and (max-width: 1200px) {
+  .locationDetailsContainer {
     flex-direction: column;
   }
-  .locationContainer{
+
+  .locationContainer {
     width: 100%;
     margin-bottom: 1rem;
   }
-  .locationMap{
+
+  .locationMap {
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -123,534 +230,648 @@
 }
 
 @media screen and (max-width: 1120px) {
-  .processWoman{
+  .processWoman {
     height: 800px;
   }
 }
 
 @media screen and (max-width: 1055px) {
-  .moversBtnContainer{
+  .moversBtnContainer {
     width: 25%;
   }
-  .newsLetterText{
+
+  .newsLetterText {
     width: 80%;
   }
-  .newsLetterInputContainer{
+
+  .newsLetterInputContainer {
     width: 100%;
   }
 }
 
-@media screen and (max-width:1036px){
-.moveDetailsDesc{
-  width: 90%;
-}
+@media screen and (max-width:1036px) {
+  .moveDetailsDesc {
+    width: 90%;
+  }
 }
 
 @media screen and (max-width: 943px) {
-  .sellingCardText{
+  .sellingCardText {
     font-size: 14px;
   }
-  .moveDetailsDesc{
-  width: 100%;
-}
-  .newsLetterText{
+
+  .moveDetailsDesc {
+    width: 100%;
+  }
+
+  .newsLetterText {
     width: 90%;
   }
+
   .ellipsis {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-.locationMap{
+  }
+
+  .locationMap {
     height: 100%;
     object-fit: cover;
   }
 }
 
 @media screen and (max-width:900px) {
-  .moveDetailsCtaContainer{
+  .moveDetailsCtaContainer {
     flex-direction: column;
     height: fit-content;
     width: 100%;
   }
-  .processWoman{
+
+  .processWoman {
     height: 600px;
   }
-  .moveDetailsBtnBox{
+
+  .moveDetailsBtnBox {
     width: 100%;
     margin-bottom: .5rem;
     border-right: none;
   }
-  .moversBtnContainer{
+
+  .moversBtnContainer {
     width: 100%;
   }
-  .fromAndToContainer{
+
+  .fromAndToContainer {
     top: 60px;
   }
-  .sellingCardContainer{
+
+  .sellingCardContainer {
     grid-gap: 1rem;
   }
-  .sellingPointStyle{
+
+  .sellingPointStyle {
     margin: 0;
   }
+
   .sellingPointText {
     text-align: left;
     font-size: 30px;
     width: 100%;
   }
-  .sellingPointDesc{
+
+  .sellingPointDesc {
     text-align: left;
     font-size: 16px;
     width: 100%;
   }
-  
+
 }
 
 @media screen and (max-width: 850px) {
+
   /* .sellingCardText{
     font-size: 14px;
   } */
-  .sellingCardContainer{
+  .sellingCardContainer {
     grid-template-columns: repeat(1, 1fr);
   }
-  .sellingpointCardImage{
+
+  .sellingpointCardImage {
     height: 350px;
   }
-  .processWoman{
+
+  .processWoman {
     height: 500px;
   }
 }
 
-@media screen and (max-width: 815px){
-  .mobileProgressArrow{
+@media screen and (max-width: 815px) {
+  .mobileProgressArrow {
     width: 130px;
   }
-  .mobileProgressArrow2{
+
+  .mobileProgressArrow2 {
     width: 150px;
   }
 }
-  
 
-@media screen and (max-width: 800px){
-  .processText{
+
+@media screen and (max-width: 800px) {
+  .processText {
     font-size: 36px;
   }
-  .womanHighlight{
+
+  .womanHighlight {
     left: -10px;
     bottom: 80px;
   }
-  .newsLetterStyle{
+
+  .newsLetterStyle {
     margin-top: 0;
   }
-  .newsLetterText{
+
+  .newsLetterText {
     /* text-align: left; */
     width: 100%;
     font-size: 32px;
   }
-  .quoteContainer{
+
+  .quoteContainer {
     flex-direction: column;
   }
-  .quoteContainerProgress{
+
+  .quoteContainerProgress {
     width: 100%;
     display: none;
   }
-  .quoteContainerBtns{
+
+  .quoteContainerBtns {
     display: none;
   }
-  .quoteContainerPrimaryBtn{
+
+  .quoteContainerPrimaryBtn {
     display: block;
   }
-  .locationParentContainer{
+
+  .locationParentContainer {
     margin-left: 0;
   }
-  .mobileQuoteProgress{
+
+  .mobileQuoteProgress {
     display: flex;
     padding: 16px 8px;
     width: 100%;
   }
- 
+
 }
 
-@media screen and (max-width: 775px){
-  
-  .subMobileProgressArrow{
+@media screen and (max-width: 775px) {
+
+  .subMobileProgressArrow {
     width: 125px;
   }
-  .mobileProgressArrow{
+
+  .mobileProgressArrow {
     width: 125px;
   }
 }
 
-@media screen and (max-width: 755px){
-  .subMobileProgressArrow{
+@media screen and (max-width: 755px) {
+  .subMobileProgressArrow {
     width: 120px;
   }
 }
 
-@media screen and (max-width: 745px){
-  .mobileProgressArrow{
+@media screen and (max-width: 745px) {
+  .mobileProgressArrow {
     width: 120px;
   }
 }
 
-@media screen and (max-width: 735px){
-  .subMobileProgressArrow{
+@media screen and (max-width: 735px) {
+  .subMobileProgressArrow {
     width: 115px;
   }
 }
 
-@media screen and (max-width: 725px){
-  .mobileProgressArrow{
+@media screen and (max-width: 725px) {
+  .mobileProgressArrow {
     width: 110px;
   }
 }
 
 @media screen and (max-width: 720px) {
-  .mobileNav{
+  .mobileNav {
     display: flex;
   }
-  .desktopNav{
+
+  .desktopNav {
     display: none;
   }
-  .zoomcardTextBox{
+
+  .zoomcardTextBox {
     width: 100%;
   }
-  .trustedImageContainer{
+
+  .trustedImageContainer {
     width: 100%;
   }
-  .sellingCardContainer{
+
+  .sellingCardContainer {
     margin-top: 2rem;
   }
-  .processText{
+
+  .processText {
     width: 100%;
   }
-  
- 
+
+
 }
 
-@media screen and (max-width: 715px){
-  .subMobileProgressArrow{
+@media screen and (max-width: 715px) {
+  .subMobileProgressArrow {
     width: 110px;
   }
-   .mobileProgressArrow2{
+
+  .mobileProgressArrow2 {
     width: 120px;
   }
 }
 
-@media screen and (max-width: 695px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 695px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 105px;
   }
 }
 
 @media screen and (max-width:680px) {
-  .footerContainer{
+  .footerContainer {
     flex-direction: column;
   }
-  .text-right{
+
+  .text-right {
     text-align: left;
-   
+
   }
-  .footerDesc{
+
+  .footerDesc {
     font-size: 15px;
     font-weight: 400;
   }
-  .footerSubContainer{
+
+  .footerSubContainer {
     margin-top: 2rem;
     flex-direction: column;
   }
-  .footerSubBox{
+
+  .footerSubBox {
     margin-top: 2rem;
   }
-  .footerMainText{
+
+  .footerMainText {
     margin-bottom: 1rem;
   }
 }
 
-@media screen and (max-width: 675px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 675px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 103px;
   }
 }
 
-@media screen and (max-width: 675px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 675px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 210%;
   }
 }
 
-@media screen and (max-width: 655px){
+@media screen and (max-width: 655px) {
+
   /* .mobileProgressArrow{
     width: 110px;
   } */
-  .subMobileProgressArrow, .mobileProgressArrow{
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 200%;
   }
 
-  .womanHighlight{
+  .womanHighlight {
     left: -10px;
     bottom: 40px;
   }
 }
 
-@media screen and (max-width: 635px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 635px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 190%;
   }
 }
 
-@media screen and (max-width: 615px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 615px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 180%;
   }
 }
 
-@media screen and (max-width: 600px){
-  .moveDetailsText{
+@media screen and (max-width: 600px) {
+  .moveDetailsText {
     font-size: 32px;
   }
-  .moveDetails{
+
+  .moveDetails {
     margin: 2rem auto;
     border-radius: 0;
     width: 100vw;
   }
-  .trustedImage{
+
+  .trustedImage {
     width: 52px;
   }
-  .trustedText{
+
+  .trustedText {
     font-size: 16px;
   }
-  .newsLetterContainer{
+
+  .newsLetterContainer {
     padding: 2rem .5rem
   }
 
-  .subMobileProgressArrow, .mobileProgressArrow{
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 172%;
   }
-  .fromLocationText{
+
+  .fromLocationText {
     width: 250px;
   }
 
-   .mobileProgressArrow2{
+  .mobileProgressArrow2 {
     width: 100px;
   }
 }
 
-@media screen and (max-width: 570px){
+@media screen and (max-width: 570px) {
 
-.subMobileProgressArrow, .mobileProgressArrow{
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 162%;
   }
 }
 
 
-@media screen and (max-width: 565px){
-  .fromAndToContainer{
+@media screen and (max-width: 565px) {
+  .fromAndToContainer {
     width: 100%;
   }
-  .processWoman{
+
+  .processWoman {
     height: 450px;
   }
-  .newsLetterSendBtn{
+
+  .newsLetterSendBtn {
     width: 20%;
   }
-  .newsLetterText{
+
+  .newsLetterText {
     font-size: 28px;
   }
-  .newsLetterDesc{
+
+  .newsLetterDesc {
     font-size: 15px;
   }
 }
 
-@media screen and (max-width: 560px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 560px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 152%;
   }
 }
 
-@media screen and (max-width: 540px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 540px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 142%;
   }
 }
 
-@media screen and (max-width: 520px){
- .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 520px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 132%;
   }
 }
 
 @media screen and (max-width: 500px) {
-  .heroBtnContainer{
+  .heroBtnContainer {
     flex-direction: column;
     margin-top: 2rem;
     width: 100%;
   }
-  .needMoreAssitance{
+
+  .needMoreAssitance {
     display: none;
   }
-  .secoondaryBtnContaiiner{
+
+  .secoondaryBtnContaiiner {
     margin-left: 0;
     margin-top: 20px;
     width: 100%;
   }
-  .heroText{
+
+  .heroText {
     font-size: 34px;
     line-height: 54px;
   }
-  .heroDesc{
+
+  .heroDesc {
     font-size: 18px;
     line-height: 26px;
   }
-  .zoomingCard{
+
+  .zoomingCard {
     height: 400px;
   }
 
-  .zoomCardDesc{
+  .zoomCardDesc {
     font-size: 14px;
   }
-  .processText{
+
+  .processText {
     font-size: 30px;
   }
-  .processLeftText{
+
+  .processLeftText {
     font-size: 20px;
   }
-  .processLeftDesc{
+
+  .processLeftDesc {
     /* font-size: 16px; */
     width: 100%;
   }
-  .decorBtn{
+
+  .decorBtn {
     width: 100%;
     font-size: 16px;
   }
-  .moveDetailsDesc{
+
+  .moveDetailsDesc {
     font-size: 16px;
   }
-  .sellingpointCardImage{
+
+  .sellingpointCardImage {
     height: 220px;
   }
-  .processWoman{
+
+  .processWoman {
     height: 400px;
   }
-  .footerEndContainer{
+
+  .footerEndContainer {
     flex-direction: column;
-    gap:10px ;
+    gap: 10px;
   }
-  .trackCodeBox{
+
+  .trackCodeBox {
     width: 400px;
   }
 
-  .subMobileProgressArrow, .mobileProgressArrow{
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 138%;
   }
-  .fromLocationText{
+
+  .fromLocationText {
     width: 200px;
   }
 }
 
-@media screen and (max-width: 480px){
-.subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 480px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 130%;
   }
-   .mobileProgressArrow2{
+
+  .mobileProgressArrow2 {
     width: 80px;
   }
 }
 
-@media screen and (max-width: 460px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 460px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 120%;
   }
 }
 
-@media screen and (max-width: 440px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 440px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 110%;
   }
-  .fromLocationText{
+
+  .fromLocationText {
     width: 160px;
   }
 }
 
 
 @media screen and (max-width:430px) {
-  .trackCodeBoxText{
+  .trackCodeBoxText {
     font-size: 18px;
   }
-  .trackCodeBoxInput{
+
+  .trackCodeBoxInput {
     height: 30px;
     width: 30px;
     font-size: 16px;
   }
-  .trackCodeBox{
+
+  .trackCodeBox {
     width: 95%;
   }
+
   /* .trackCodeBoxText{
     font-size: 16px;
   } */
 
-  .trackBoxInputContainer{
+  .trackBoxInputContainer {
     grid-gap: 6px;
   }
 }
 
-@media screen and (max-width: 420px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 420px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 100%;
   }
 }
 
-@media screen and (max-width: 400px){
-  .moveDetailsText{
+@media screen and (max-width: 400px) {
+  .moveDetailsText {
     font-size: 28px;
   }
-  .moveDetails{
+
+  .moveDetails {
     padding: 2rem .5rem;
   }
-  .trustedImage{
+
+  .trustedImage {
     width: 36px;
   }
-  .sellingpointCardImage{
+
+  .sellingpointCardImage {
     height: 160px;
   }
-  .processWoman{
+
+  .processWoman {
     height: 380px;
   }
- .subMobileProgressArrow, .mobileProgressArrow{
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 90%;
   }
-   .mobileProgressArrow2{
+
+  .mobileProgressArrow2 {
     width: 60px;
   }
 }
 
-@media screen and (max-width: 380px){
-  .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 380px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 80%;
   }
-  .locationFrom{
+
+  .locationFrom {
     padding: 0 8px;
   }
-  .fromLocationText{
+
+  .fromLocationText {
     width: 120px;
   }
 }
 
-@media screen and (max-width: 360px){
- .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 360px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 70%;
   }
-  
+
 }
 
-@media screen and (max-width: 340px){
- .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 340px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 60%;
   }
 }
 
-@media screen and (max-width: 330px){
- .subMobileProgressArrow, .mobileProgressArrow{
+@media screen and (max-width: 330px) {
+
+  .subMobileProgressArrow,
+  .mobileProgressArrow {
     width: 55%;
   }
 }
